@@ -16,6 +16,22 @@
 	<script src="js/jquery.ba-hashchange.min.js"></script>
 	<script src="js/mail.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
+		authDomain: "lod-website-d1c63.firebaseapp.com",
+		databaseURL: "https://lod-website-d1c63.firebaseio.com",
+		storageBucket: "lod-website-d1c63.appspot.com",
+		messagingSenderId: "98081039336"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+	<script src="js/testing.js"></script>
+	
 </head>
 <body onload="$(window).hashchange();">
 	<img alt="plant background" id="background" src="img/background3.jpg">
@@ -87,14 +103,7 @@
 		</div>
 	</div>
 	<!-- End DWUser_EasyRotator -->
-
-
-
-
-
-
-
-
+	
 	<br class="clearboth" id="bannerSpacer">
 	<!--Navigation Menu-->
 	<nav>
@@ -164,6 +173,9 @@
 	<div class="bodycontent" id="missionBody">
 		<h1>Our Mission:</h1>
 		<hr class="headingUnderline"/>
+		
+		<script>testing()</script>
+		
 		<div class="blankline">&nbsp;</div>
 		<b>"To share the love and the light of Jesus Christ so all people may know God"</b>
 		<blockquote>"For God so loved the world that he gave his only Son, so that everyone who believes in him may not perish but may have eternal life." John 3:16</blockquote>
@@ -354,7 +366,7 @@
 			<br class="clearboth">
 			
 			<p><input type="submit" value="Send" class="submitButton"></p>
-		</form-->
+		</form>
 	</div>
 	<!--Map-->
 	<div class="bodycontent" id="mapBody">
@@ -389,6 +401,7 @@
 			<a href="luxcal323-calendar/rssfeed.php?cal=mycal" target="_blank">RSS Feed</a>
 		</p>
 	</div>
+	<!-- What we do -------------------------------------------------------------------------------------------------------------->
 	<!--Family-->
 	<div class="bodycontent" id="familyBody">
 		<blockquote style="margin-top: 0;">"But you will receive power when the Holy Spirit comes on you; and you will be my witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth." Acts 1:8</blockquote>

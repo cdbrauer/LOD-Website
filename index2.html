@@ -12,23 +12,23 @@
     <link href="magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 	<link href="img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
 
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
+	    authDomain: "lod-website-d1c63.firebaseapp.com",
+	    databaseURL: "https://lod-website-d1c63.firebaseio.com",
+	    storageBucket: "lod-website-d1c63.appspot.com",
+	    messagingSenderId: "98081039336"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery.ba-hashchange.min.js"></script>
 	<script src="js/mail.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.js"></script>
-
-	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-		apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
-		authDomain: "lod-website-d1c63.firebaseapp.com",
-		databaseURL: "https://lod-website-d1c63.firebaseio.com",
-		storageBucket: "lod-website-d1c63.appspot.com",
-		messagingSenderId: "98081039336"
-	  };
-	  firebase.initializeApp(config);
-	</script>
 
 	<script src="js/database.js"></script>
 
@@ -173,8 +173,6 @@
 	<div class="bodycontent" id="missionBody">
 		<h1>Our Mission:</h1>
 		<hr class="headingUnderline"/>
-
-		<script>testing()</script>
 
 		<div class="blankline">&nbsp;</div>
 		<b>"To share the love and the light of Jesus Christ so all people may know God"</b>
@@ -412,23 +410,7 @@
 		<h1>Children/Youth:</h1>
 		<hr class="headingUnderline"/>
 		<div class="familySection" id="childrenSection">
-			<h2>Kids Kingdom</h2>
-			<p>Kindergarten - 5th Grade</p>
-			<p>Sundays during the services</p>
-			<p>Room 102 and Youth Room</p>
-			<p>Contact Shawn Chappel for more information: <script>insertEMail("shawn");</script></p>
-			<h2>JAM</h2>
-			<p>Junior High</p>
-			<p>Sunday evenings 5:00pm to 6:30pm</p>
-			<p>Youth Room</p>
-			<p>Contact Pastor Michael Bailey for more information: <script>insertEMail("michael");</script></p>
-			<h2>DV8</h2>
-			<p>Senior High</p>
-			<p>Sunday evenings 6:30pm to 8:00pm</p>
-			<p>Youth Room</p>
-			<p>Contact Pastor Michael Bailey for more information: <script>insertEMail("michael");</script></p>
-			<h2 id="VBS">Vacation Bible School</h2>
-			<p>For more information, visit our <a href="#vbs">VBS page</a></p>
+			<script>getChurchEvent("childrenSection", "youth", "0")</script>
 		</div>
 		<div class="spacer">&nbsp;</div>
 		<img src="img/arrowdown.png" class="sectionArrowRD" id="adultArrowD" alt="down arrow"/>

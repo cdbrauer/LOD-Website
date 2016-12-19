@@ -1,55 +1,53 @@
-function getEventsForGroup(divId, group) {
-    var i = 0;
+/**
+ * Function for retrieving lists of data from Firebase.
+ *
+ * This will retrieve the data from the given path in the database,
+ * convert the JSON object into formatted text using the given function,
+ * and insert the data into HTML inside the specified div.
+ */
+function getDataList(path, dataAdder, divId) {
+    firebase.database().ref(path).once('value').then(function(snapshot) {
+        var events = snapshot.val();
 
-    while(true) {
-        var success = getChurchEventBlocking(divId, group, i);
-
-        if(success == false) {
-            break;
+        for (var index in events) {
+            if (events.hasOwnProperty(index)) {
+                dataAdder(divId, events[index]);
+            }
         }
-
-        i++;
-    }
+    });
 }
 
-function getChurchEventBlocking(divId, group, index) {
-    var success = true;
-    var done = false;
-
-    firebase.database().ref('church/' + group + '/' + index).once('value').then(function(snapshot) {
-        if(snapshot.exists()) {
-            var event = snapshot.val();
-            var html = '<h2>' + event.title + '</h2>';
-            html += '<p>' + event.age + '</p>';
-            html += '<p>' + event.time + '</p>';
-            html += '<p>' + event.room + '</p>';
-            html += '<p>' + event.contact + '</p>';
-
-            document.getElementById(divId).innerHTML = html;
-
-            success = true;
-        }
-        else {
-            success = false;
-        }
-
-        done = true;
+/**
+ * Function for retrieving data from Firebase.
+ *
+ * This will retrieve the data from the given path in the database,
+ * convert the JSON object into formatted text using the given function,
+ * and insert the data into HTML inside the provided divId.
+ */
+function getData(path, dataAdder, divId) {
+    firebase.database().ref(path).once('value').then(function(snapshot) {
+        dataAdder(divId, snapshot.val());
     });
-
-    while(done == false);
-
-    return success;
 }
 
-function getChurchEvent(divId, group, index) {
-    firebase.database().ref('church/' + group + '/' + index).once('value').then(function(snapshot) {
-        var event = snapshot.val();
-        var html = '<h2>' + event.title + '</h2>';
-        html += '<p>' + event.age + '</p>';
-        html += '<p>' + event.time + '</p>';
-        html += '<p>' + event.room + '</p>';
-        html += '<p>' + event.contact + '</p>';
+/**
+ * Function that converts the JSON data representing a church event into formatted HTML
+ */
+function addEvent(divId, event) {
+    var html = '';
 
-        document.getElementById(divId).innerHTML = html;
-    });
+    html = '<h2>' + event.title + '</h2>';
+    html += '<p>' + event.age + '</p>';
+    html += '<p>' + event.time + '</p>';
+    html += '<p>' + event.room + '</p>';
+    html += '<p>' + event.contact + '</p>';
+
+    addTextToDiv(html);
+}
+
+/**
+ * Helper function for inserting text into a div in HTML
+ */
+function addTextToDiv(divId, text) {
+    document.getElementById(divId).innerHTML += text;
 }

@@ -410,7 +410,7 @@
 		<h1>Children/Youth:</h1>
 		<hr class="headingUnderline"/>
 		<div class="familySection" id="childrenSection">
-			<script>getDataList("church/youth", addEvent, "childrenSection")</script>
+			<script>getDataList("church/youth", DataConverters.event, "childrenSection")</script>
 		</div>
 		<div class="spacer">&nbsp;</div>
 		<img src="img/arrowdown.png" class="sectionArrowRD" id="adultArrowD" alt="down arrow"/>
@@ -419,7 +419,7 @@
 		<h1>Adult:</h1>
 		<hr class="headingUnderline"/>
 		<div class="familySection" id="adultSection">
-			<script>getDataList("church/adult", addEvent, "adultSection")</script>
+			<script>getDataList("church/adult", DataConverters.event, "adultSection")</script>
 		</div>
 		<div class="spacer">&nbsp;</div>
 		<img src="img/arrowdown.png" class="sectionArrowRD" id="womenArrowD" alt="down arrow"/>
@@ -428,7 +428,7 @@
 		<h1>Women:</h1>
 		<hr class="headingUnderline"/>
 		<div class="familySection" id="womenSection">
-			<script>getDataList("church/women", addEvent, "womenSection")</script>
+			<script>getDataList("church/women", DataConverters.event, "womenSection")</script>
 		</div>
 		<div class="spacer">&nbsp;</div>
 		<img src="img/arrowdown.png" class="sectionArrowRD" id="menArrowD" alt="down arrow"/>
@@ -437,17 +437,7 @@
 		<h1>Men:</h1>
 		<hr class="headingUnderline"/>
 		<div class="familySection" id="menSection">
-			<h2>Men's Bible Study - Matthew</h2>
-			<p>Wednesday Mornings 6:00am</p>
-			<p>IHOP at 19th Avenue and Bell Road</p>
-			<p>Contact Pastor Paul Witkop for more information: <script>insertEMail("paul");</script></p>
-			<h2>Men's Bible Study - On Break Until September</h2>
-			<p>Wednesday Mornings 8:00am</p>
-			<p>Room 101 at the church</p>
-			<p>Contact John for more information: <script>insertEMail("john");</script></p>
-			<h2>Man Cave Events</h2>
-			<p>Periodically throughout the year we will be getting together for fellowship and great discussions on what it means to live as man of God. Good food is usually also a part of the equation. Be sure to look for these dates on our <a href="#calendar">event calendar</a>.</p>
-			<p>Contact Brian for more information: <script>insertEMail("brian");</script></p>
+			<script>getDataList("church/men", DataConverters.event, "menSection")</script>
 		</div>
 		<div class="spacer">&nbsp;</div>
 		<img src="img/arrowdown.png" class="sectionArrowRD" id="serveArrowD" alt="down arrow"/>
@@ -456,16 +446,7 @@
 		<h1>Serve Your Church Familiy:</h1>
 		<hr class="headingUnderline"/>
 		<div class="familySection" id="serveSection">
-			<h2>Donut Servers</h2>
-			<p>Contact Patty Robinson for information: <script>insertEMail("patty");</script></p>
-			<h2>Greeters and Ushers</h2>
-			<p>Contact Peggy for information: <script>insertEMail("peggy");</script></p>
-			<h2>Communion Assistants</h2>
-			<p>Contact Nancy for information: <script>insertEMail("nancy");</script></p>
-			<h2>Music</h2>
-			<p>Contact Tamra Duncan for information: <script>insertEMail("tamra");</script></p>
-			<h2>Technology</h2>
-			<p>Contact Jeff Duncan for information: <script>insertEMail("jeff");</script></p>
+			<script>getDataList("church/serve", DataConverters.event, "serveSection")</script>
 		</div>
 		<div class="spacer">&nbsp;</div>
 	</div>
@@ -489,49 +470,9 @@
 			<div class="blankline">&nbsp;</div>
 			<p>For more information about any of these ministries, contact Pastor Paul Witkop at <script>insertEMail("paul")</script>, Pastor Michael Bailey at <script>insertEMail("michael");</script>, or Patty Robinson at <script>insertEMail("patty");</script>.</p>
 
-			<h2>Neighbors in Need </h2>
-			<p>
-				We support this organization that coordinates all the social need
-				agencies in the Cave Creek/Carefree area.
-			</p>
-			<p>For more information, see <a href="http://www.neighborsinneedaz.org/" target="_blank">neighborsinneedaz.org</a></p>
-			<h2>Foothills Caring Corps</h2>
-			<p>
-				We support the Caring Corps efforts to serve the elderly in the Cave Creek/Carefree area.
-			</p>
-			<p>For more information, see <a href="http://www.foothillscaringcorps.com/" target="_blank">foothillscaringcorps.com</a></p>
-			<h2>Foothills Food Bank</h2>
-			<p>We support this foodbank which provides food and utility relief for those in Cave Creek/Carefree area.</p>
-			<p>For more information, visit <a href="http://www.foothillsfoodbank.com/" target="_blank">foothillsfoodbank.com</a></p>
-			<h2>Neighborhood Ministries</h2>
-			<p>We support this inner city ministry that cares for children in the inner city of Phoenix<p>
-			<p>For more information, see <a href="http://www.nmphx.com/" target="_blank">nmphx.com</a></p>
-			<h2>Phoenix Dream Center</h2>
-			<p>We support this Christ centered ministry that serves the homeless, low-income, at-risk youth and struggling individuals by providing resources and supportive services.</p>
-			<p>For more information, see <a href="http://www.phxdreamcenter.org/" target="_blank">phxdreamcenter.org</a></p>
-			<h2>Catch the Vision</h2>
-			<p>We support JD Hill in his efforts to help the youth of Arizona make right choices to avoid the pitfalls of drug and alcohol abuse and find hope in Jesus Christ.</p>
-			<p>For more information, see <a href="http://www.jdhill.org/" target="_blank">jdhill.org</a></p>
-			<h2>Street Light Ministries</h2>
-			<p>We support this organization that seeks to transition adolescent girls who have been involved in trafficking and exploitation to triumph in Jesus Christ.</p>
-			<p>For more information, see <a href="http://www.streetlightusa.org/" target="_blank">streetlightusa.org</a></p>
-			<h2>Chris Becker Dining Room</h2>
-			<p>We support and serve meals the  second Sunday evening of each month in an inner city setting.  All are invited to serve.</p>
-			<h2>La Sagrada Familia</h2>
-			<p>
-				We support our Latino brothers and sisters in Christ and the congregation
-				of La Sagrada Familia located in the Bell Road and 28th street area.
-			</p>
-			<h2>Light the Way</h2>
-			<p>
-				We support this new congregation of Lutheran Congregations in Mission for
-				Christ in Cortaro, Arizona.
-			</p>
-			<h2>Hope Church inner city</h2>
-			<p>
-				We support this new congregation of Lutheran Congregations in Mission for
-				Christ in the inner city of Phoenix.
-			</p>
+			<div class="bodycontent" id="ministrySection">
+				<script>getDataList("community/ministries", DataConverters.ministry, "ministrySection")</script>
+			</div>
 
 		<div class="spacer">&nbsp;</div>
 	</div>

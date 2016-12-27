@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<title>Light of the Desert Lutheran Church</title>
+	<!--[if IE]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="css/reset.min.css" rel="stylesheet" type="text/css">
+	<link href="css/style4.css" rel="stylesheet" type="text/css">
+	<link href="magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
+	<link href="img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.ba-hashchange.min.js"></script>
+	<script src="js/mail.min.js"></script>
+	<script src="magnific-popup/jquery.magnific-popup.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body onload="$(window).hashchange();">
+	<header>
+		<div id="mainMenu">
+			<div id="navbarBack"></div>
+			<div class="menuColumn">
+				<section>
+					<h3>Who We Are</h3>
+					<ul>
+						<li>Mission</li>
+						<li>Organizations</li>
+						<li>Leadership</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Sundays</h3>
+					<ul>
+						<li>Location and Services</li>
+						<li>What to Expect</li>
+						<li>Volunteer Opportunities</li>
+						<li>Adult Sunday School</li>
+						<li>Childrens Church</li>
+					</ul>
+				</section>
+			</div>
+			<div class="menuColumn">
+				<section>
+					<h3>Adults</h3>
+					<ul>
+						<li>Adult Sunday School</li>
+						<li>Women</li>
+						<li>Men</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Kids and Students</h3>
+					<ul>
+						<li>Childrens Church</li>
+						<li>Junior High</li>
+						<li>Senior High</li>
+					</ul>
+				</section>
+			</div>
+			<div class="menuColumn">
+				<section>
+					<h3>Give</h3>
+					<ul>
+						<li>Give Online</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Serve</h3>
+					<ul>
+						<li>In Our Church</li>
+						<li>In Our Community</li>
+						<li>In Our World</li>
+					</ul>
+				</section>
+			</div>
+			<div class="menuColumn">
+			</div>
+			<div class="menuColumn">
+				<section>
+					<h3>Resources</h3>
+					<ul>
+						<li>Messages</li>
+						<li>Calendar</li>
+						<li>Newsletter</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Contact</h3>
+					<ul>
+						<li>Location</li>
+						<li>Church Contact Information</li>
+						<li>Staff Contact Information</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<nav id="navbar">
+			<a href="#home" onclick="scroll(0)"><img alt="LOD Logo" src="img/Light_of_the_Desert_15_W75T.png"/></a>
+			<ul>
+				<li><a href="#mission">Who We Are</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#watch">Watch Messages</a></li>
+				<li><a href="#calendar">Calendar</a></li>
+				<li><a href="#give">Give</a></li>
+				<li>
+					<i class="fa fa-facebook-f" title="Facebook"></i>
+					<i class="fa fa-twitter" title="Twitter"></i>
+					<i class="fa fa-youtube-play" title="YouTube"></i>
+					<i class="fa fa-bars" id="menuOpen" title="Menu" onclick="openMenu()"></i>
+					<i class="fa fa-times" id="menuClose" title="Close Menu" onclick="closeMenu()"></i>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="homepage">
+		<div id="mainHome" class="parallax">
+			<h2>Welcome to<br/> Light of the Desert</h2>
+			<div class="buttons">
+				<div class="halfSection rightAlign">
+					<div class="button">Location and Service Times</div>
+					<br/>
+					<div class="button">Event Calendar</div>
+				</div>
+				<div class="halfSection leftAlign">
+					<div class="button">Watch our latest messsage</div>
+					<br/>
+					<div class="button">Give</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="weekendsHome" class="parallax">
+			<h2>Sundays</h2>
+			<div class="buttons">
+				<div class="button">Services</div>
+				<br/>
+				<div class="halfSection rightAlign">
+					<div class="button">Adult Sunday School</div>
+				</div>
+				<div class="halfSection leftAlign">
+					<div class="button">Childrens Church</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="adultHome" class="parallax">
+			<h2>Adults</h2>
+			<div class="buttons">
+				<div class="button">Adult Sunday School</div>
+				<div class="button">Women</div>
+				<div class="button">Men</div>
+			</div>
+		</div>
+	
+		<div id="studentsHome" class="parallax">
+			<h2>Kids and Students</h2>
+			<div class="buttons">
+				<div class="button">Childrens Church</div>
+				<div class="button">Junior High</div>
+				<div class="button">Senior High</div>
+			</div>
+		</div>
+	
+		<div id="serveHome" class="parallax">
+			<h2>Serve</h2>
+			<div class="buttons">
+				<div class="button">In our Church</div>
+				<div class="button">In our Community</div>
+				<div class="button">In our World</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<img alt="LOD Logo" src="img/Light_of_the_Desert_15_G75T.png"/>
+		<br/>
+		<div id="footerIcons">
+			<i class="fa fa-facebook-f"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-youtube-play"></i>
+		</div>
+		<div id="leftFooter">© 2016 Light of the Desert Lutheran Church | Member LCMC</div>
+		<div id="rightFooter">33175 N Cave Creek Road | Cave Creek, AZ | 85331 | 480-488-2716</div>
+	</footer>
+
+	<div id="floatingFooter">
+		<ul>
+			<li onclick="scroll(1)">Sundays</li>
+			<li onclick="scroll(2)">Adults</li>
+			<li onclick="scroll(3)">Kids and Students</li>
+			<li onclick="scroll(4)">Serve</li>
+		</ul>
+
+		<i class="fa fa-chevron-up" onclick="scroll(0)"></i>
+	</div>
+</body>
+</html>

@@ -375,7 +375,9 @@
 	<div class="bodycontent" id="servicesBody">
 		<h1>Sunday Worship Services:</h1>
 		<hr class="headingUnderline"/>
-		<b>9:00 am and 10:45 am</b><br/>
+		<div id="serviceTimesSection">
+			<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
+		</div>
 		<div class="spacer">&nbsp;</div>
 
 		<p>Adult Sunday School is at 10:45 am</p>
@@ -470,8 +472,8 @@
 			<div class="blankline">&nbsp;</div>
 			<p>For more information about any of these ministries, contact Pastor Paul Witkop at <script>insertEMail("paul")</script>, Pastor Michael Bailey at <script>insertEMail("michael");</script>, or Patty Robinson at <script>insertEMail("patty");</script>.</p>
 
-			<div class="bodycontent" id="ministrySection">
-				<script>getDataList("community/ministries", DataConverters.ministry, "ministrySection")</script>
+			<div id="communitySection">
+				<script>getDataList("community/ministries", DataConverters.ministry, "communitySection")</script>
 			</div>
 
 		<div class="spacer">&nbsp;</div>
@@ -487,88 +489,33 @@
 
 			<h2>Missionary Support</h2>
 			<ul>
-				<li>Louis and Annie Liss - Missionaries to Lebanon</li>
-				<li>Mark and Dalene Good - Missionaries with Assemblies of God in France</li>
-				<li>Kent and Shelley Scott - Missionaries with World Mission Prayer League in Bangladesh</li>
-				<li>John and Betsy Gronseth - Missionaries with World Mission Prayer League in China</li>
-				<li>Bosnia - Support and relationships with Evangelical Church in Bosnia and Children’s Camp</li>
+				<div id="missionarySection">
+					<script>getDataList("world/missionaries", DataConverters.listItem, "missionarySection")</script>
+				</div>
 			</ul>
-			<h2>Hope4Kids</h2>
-			<p>
-				Through Hope4Kids, we have adopted and befriended a village in Kasolo, Uganda, Africa.  The name of our sister church in Kasolo is Amazing Grace Church.  They pray for us and we pray for them and look for other ways to show our friendship.
-			</p>
-			<p>For more information, see <a href="http://www.hope4kidsinternational.org/" target="_blank">hope4kidsinternational.org</a></p>
 
-			<h2>Watoto Church and Children’s Choir</h2>
-			<p>
-				Biannually we host the Watoto Children’s Choir from Watoto Church in Kampala, Uganda.  We also
-				sponsor orphaned children through Watoto.
-			</p>
-			<p>For more information, see <a href="http://www.watoto.com/" target="_blank">watoto.com</a></p>
-			<h2>Voice of the Martyrs</h2>
-			<p>We support Voice of the Martyrs and the persecuted church in the world through prayer and letter writing.</p>
-			<p>For more information, see <a href="http://www.persecution.com/" target="_blank">persecution.com</a></p>
-			<h2>Feed My Starving Children</h2>
-			<p>
-				We support this organization not only
-				with our offerings but also with volunteer time packing food.
-			</p>
-			<p>
-				Look for sign-up sheets in the narthex as
-				the dates draw near. Check the list to
-				see who you might want to carpool
-				with. If you have any questions about
-				Feed My Starving Children, see Kathy
-				Grandprey.
-			</p>
-			<p>For more information, see <a href="http://www.fmsc.org/" target="_blank">fmsc.org</a></p>
+			<div id="worldSection">
+				<script>getDataList("world/ministries", DataConverters.ministry, "worldSection")</script>
+			</div>
 
-			<h2>Samaritans Purse - Operation Christmas Child</h2>
-			<p>
-				Each year, we pack more than a thousand shoeboxes with toys, shoes, clothing, hygiene items,
-				candy and a Gospel message. The boxes are sent to third world children.
-			</p>
 		<div class="spacer">&nbsp;</div>
 	</div>
 	<!--Links-->
 	<div class="bodycontent" id="linksBody">
 		<h1>Websites:</h1>
 		<hr class="headingUnderline"/>
-		<h2>Bible Gateway</h2>
-		<p><a href="http://www.biblegateway.com/" target="_blank">www.biblegateway.com</a></p>
-		<p>An online searchable Bible providing over fifty different translations.</p>
-		<h2>Focus on the Family</h2>
-		<p><a href="http://www.focusonthefamily.com/" target="_blank">www.focusonthefamily.com</a></p>
-		<p>"Focus on the Family exists to serve you and your family... Every day we're at work on new programs and initiatives that will help you and your family even more" (www.focusonthefamily.com). At Focus on the Family, you will find valuable articles, books, and CDs that will aid in your pursuit to be a loving and effective parent.</p>
-		<h2>Lutheran World Relief</h2>
-		<p><a href="http://www.lwr.org/" target="_blank">www.lwr.org</a></p>
-		<p>An international nonprofit organization that works to end poverty and injustice.</p>
-		<h2>Moravian Church in North America</h2>
-		<p><a href="http://www.moravian.org/" target="_blank">www.moravian.org</a></p>
-		<h2>Lutheran Congregations in Mission for Christ</h2>
-		<p><a href="http://www.lcmc.net/" target="_blank">www.lcmc.net</a></p>
-		<p>Lutheran Congregations in Mission for Christ is an association of congregations and individuals who are free in Christ, accountable to one another, rooted in the Scriptures and the Lutheran Confessions and working together to fulfill Christ's Great Commission to go and make disciples of all nations.</p>
-		<h2>Willow Creek Association</h2>
-		<p><a href="http://www.willowcreek.com/" target="_blank">www.willowcreek.com</a></p>
-		<p>Founded in 1992, Willow Creek Association (WCA) serves pioneering pastors and leaders through world-class leadership experiences and resources. WCA is committed to a singular idea: that inspired, encouraged, and equipped Christian leaders create thriving local churches that redeem their communities for Christ.</p>
+
+		<div id="websitesSection">
+			<script>getDataList("links/websites", DataConverters.website, "websitesSection")</script>
+		</div>
+
 		<div class="spacer">&nbsp;</div>
 		<h1>Apps:</h1>
 		<hr class="headingUnderline"/>
-		<div class="appIcons">
-			<a href="https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android" target="_blank"><img alt="Googly Play" src="img/google-play.png"/></a>
-			<a href="http://itunes.apple.com/app/bible/id282935706" target="_blank"><img alt="Apple App Store" src="img/apps-store.png"/></a>
+
+		<div id="appsSection">
+			<script>getDataList("links/apps", DataConverters.app, "appsSection")</script>
 		</div>
-		<h2>LifeChurch TV Bible App</h2>
-		<p>A free Bible app for your mobile device with multiple translations, reading plans, and more.</p>
-		<p>Check out the online version at <a href="https://www.bible.com" target="_blank">bible.com</a></p>
-		<div class="blankline" style="height: 0;">&nbsp;</div>
-		<div class="appIcons">
-			<a href="https://play.google.com/store/apps/details?id=com.subsplash.thechurchapp.northpointyourmove" target="_blank"><img alt="Googly Play" src="img/google-play.png"/></a>
-			<a href="https://itunes.apple.com/us/app/your-move-andy-stanley-app/id585790517?mt=8" target="_blank"><img alt="Apple App Store" src="img/apps-store.png"/></a>
-		</div>
-		<h2>Your Move</h2>
-		<p>Sermons by Pastor Andy Stanley</p>
-		<div class="blankline" style="height: 0;">&nbsp;</div>
 	</div>
 	<!--Sermons---------------------------------------------------------------------------------------------------------------->
 	<div class="bodycontent" id="sermonBody">

@@ -23,21 +23,21 @@
 	<script src="js/main.js"></script>
 </head>
 
-<body onload="$(window).hashchange();">
+<body>
 	<header>
 		<div id="mainMenu">
-			<div id="navbarBack"></div>
+			<div class="navbarSpacer">&nbsp;</div>
 			<div class="menuColumn">
-				<section>
-					<h3>Who We Are</h3>
+				<div class="section">
+					<h1>Who We Are</h1>
 					<ul>
 						<li>Mission</li>
 						<li>Organizations</li>
 						<li>Leadership</li>
 					</ul>
-				</section>
-				<section>
-					<h3>Sundays</h3>
+				</div>
+				<div class="section">
+					<h1>Sundays</h1>
 					<ul>
 						<li>Location and Services</li>
 						<li>What to Expect</li>
@@ -45,70 +45,70 @@
 						<li>Adult Sunday School</li>
 						<li>Childrens Church</li>
 					</ul>
-				</section>
+				</div>
 			</div>
 			<div class="menuColumn">
-				<section>
-					<h3>Adults</h3>
+				<div class="section">
+					<h1>Adults</h1>
 					<ul>
 						<li>Adult Sunday School</li>
 						<li>Women</li>
 						<li>Men</li>
 					</ul>
-				</section>
-				<section>
-					<h3>Kids and Students</h3>
+				</div>
+				<div class="section">
+					<h1>Kids and Students</h1>
 					<ul>
 						<li>Childrens Church</li>
 						<li>Junior High</li>
 						<li>Senior High</li>
 					</ul>
-				</section>
+				</div>
 			</div>
 			<div class="menuColumn">
-				<section>
-					<h3>Give</h3>
+				<div class="section">
+					<h1>Give</h1>
 					<ul>
 						<li>Give Online</li>
 					</ul>
-				</section>
-				<section>
-					<h3>Serve</h3>
+				</div>
+				<div class="section">
+					<h1>Serve</h1>
 					<ul>
 						<li>In Our Church</li>
 						<li>In Our Community</li>
 						<li>In Our World</li>
 					</ul>
-				</section>
+				</div>
 			</div>
 			<div class="menuColumn">
 			</div>
 			<div class="menuColumn">
-				<section>
-					<h3>Resources</h3>
+				<div class="section">
+					<h1>Resources</h1>
 					<ul>
 						<li>Messages</li>
 						<li>Calendar</li>
 						<li>Newsletter</li>
 					</ul>
-				</section>
-				<section>
-					<h3>Contact</h3>
+				</div>
+				<div class="section">
+					<h1>Contact</h1>
 					<ul>
 						<li>Location</li>
 						<li>Church Contact Information</li>
 						<li>Staff Contact Information</li>
 					</ul>
-				</section>
+				</div>
 			</div>
 		</div>
 		<nav id="navbar">
 			<a href="#home" onclick="scroll(0)"><img alt="LOD Logo" src="img/Light_of_the_Desert_15_W75T.png"/></a>
 			<ul>
 				<li><a href="#mission">Who We Are</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#watch">Watch Messages</a></li>
-				<li><a href="#calendar">Calendar</a></li>
+				<li><a href="#sundays">Services</a></li>
+				<li><a href="#resources">Watch Messages</a></li>
+				<li><a href="#resources">Calendar</a></li>
 				<li><a href="#give">Give</a></li>
 				<li>
 					<i class="fa fa-facebook-f" title="Facebook"></i>
@@ -121,66 +121,110 @@
 		</nav>
 	</header>
 
-	<div id="homepage">
-		<div id="mainHome" class="parallax">
-			<h2>Welcome to<br/> Light of the Desert</h2>
-			<div class="buttons">
-				<div class="halfSection rightAlign">
-					<div class="button">Location and Service Times</div>
-					<br/>
-					<div class="button">Event Calendar</div>
-				</div>
-				<div class="halfSection leftAlign">
-					<div class="button">Watch our latest messsage</div>
-					<br/>
-					<div class="button">Give</div>
+	<div id="bodyContent">
+		<div class="page" id="homepage">
+			<div id="mainHome" class="section parallax vc">
+				<h1>Welcome to<br/> Light of the Desert</h1>
+				<div class="buttons">
+					<div class="halfSection rightAlign vc">
+						<div class="button">Location and Services</div>
+						<br/>
+						<div class="button">Event Calendar</div>
+					</div>
+					<div class="halfSection leftAlign">
+						<div class="button">Watch our latest messsage</div>
+						<br/>
+						<div class="button">Give</div>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div id="weekendsHome" class="parallax">
-			<h2>Sundays</h2>
-			<div class="buttons">
-				<div class="button">Services</div>
-				<br/>
-				<div class="halfSection rightAlign">
+			<div id="weekendsHome" class="section parallax vc">
+				<h1>Sundays</h1>
+				<div class="buttons">
+					<div class="button">Services</div>
+					<br/>
+					<div class="halfSection rightAlign">
+						<div class="button">Adult Sunday School</div>
+					</div>
+					<div class="halfSection leftAlign">
+						<div class="button">Childrens Church</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="adultHome" class="section parallax vc">
+				<h1>Adults</h1>
+				<div class="buttons">
 					<div class="button">Adult Sunday School</div>
+					<div class="button">Women</div>
+					<div class="button">Men</div>
 				</div>
-				<div class="halfSection leftAlign">
+			</div>
+	
+			<div id="studentsHome" class="section parallax vc">
+				<h1>Kids and Students</h1>
+				<div class="buttons">
 					<div class="button">Childrens Church</div>
+					<div class="button">Junior High</div>
+					<div class="button">Senior High</div>
+				</div>
+			</div>
+	
+			<div id="serveHome" class="section parallax vc">
+				<h1>Serve</h1>
+				<div class="buttons">
+					<div class="button">In our Church</div>
+					<div class="button">In our Community</div>
+					<div class="button">In our World</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="adultHome" class="parallax">
-			<h2>Adults</h2>
-			<div class="buttons">
-				<div class="button">Adult Sunday School</div>
-				<div class="button">Women</div>
-				<div class="button">Men</div>
+		<div class="page" id="missionpage">
+			<div class="section">
+				<div class="missionBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Who We Are</h1>
+				</div>
+				<h2>Mission</h2>
+				<div class="quarterSection leftAlign">
+					<h3>Stuff</h3>
+				</div>
+				<div class="quarterSection leftAlign">
+					<h3>More Stuff</h3>
+					<img src="img/IMG_1405.JPG"/>
+				</div>
+				<div class="quarterSection leftAlign">
+					<h3>Even More Stuff</h3>
+					<p>lawe ub hfi juw shfie avf uibn iesal brvfio ubfvd sbwvfb ls dvbgs ew ov bfdsbgr vldb sbuvf gt iedb rgus druv bdru bouf</p>
+					<p>lawe ub hfi juw shfie avf uibn iesal brvfio ubfvd sbwvfb ls dvbgs ew ov bfdsbgr vldb sbuvf gt iedb rgus druv bdru bouf</p>
+				</div>
+				<div class="quarterSection leftAlign">
+					<h3>A List</h3>
+					<ul>
+						<li>Lorem</li>
+						<li>Ipsum</li>
+						<li>Dolor</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	
-		<div id="studentsHome" class="parallax">
-			<h2>Kids and Students</h2>
-			<div class="buttons">
-				<div class="button">Childrens Church</div>
-				<div class="button">Junior High</div>
-				<div class="button">Senior High</div>
+
+			<div class="section">
+				<div class="navbarSpacer">&nbsp;</div>
+				<h2>Organizations</h2>
+				<p>Lorem Ipsum</p>
 			</div>
-		</div>
-	
-		<div id="serveHome" class="parallax">
-			<h2>Serve</h2>
-			<div class="buttons">
-				<div class="button">In our Church</div>
-				<div class="button">In our Community</div>
-				<div class="button">In our World</div>
+
+			<div class="section">
+				<div class="navbarSpacer">&nbsp;</div>
+				<h2>Leadership</h2>
+				<p>Lorem Ipsum</p>
 			</div>
 		</div>
 	</div>
 
-	<footer>
+	<footer id="fixedFooter">
 		<img alt="LOD Logo" src="img/Light_of_the_Desert_15_G75T.png"/>
 		<br/>
 		<div id="footerIcons">
@@ -192,14 +236,22 @@
 		<div id="rightFooter">33175 N Cave Creek Road | Cave Creek, AZ | 85331 | 480-488-2716</div>
 	</footer>
 
-	<div id="floatingFooter">
+	<div class="floatingFooter" id="homepageFooter">
 		<ul>
 			<li onclick="scroll(1)">Sundays</li>
 			<li onclick="scroll(2)">Adults</li>
 			<li onclick="scroll(3)">Kids and Students</li>
 			<li onclick="scroll(4)">Serve</li>
 		</ul>
+		<i class="fa fa-chevron-up" onclick="scroll(0)"></i>
+	</div>
 
+	<div class="floatingFooter" id="missionpageFooter">
+		<ul>
+			<li onclick="scroll(0)">Mission</li>
+			<li onclick="scroll(1)">Organizations</li>
+			<li onclick="scroll(2)">Leadership</li>
+		</ul>
 		<i class="fa fa-chevron-up" onclick="scroll(0)"></i>
 	</div>
 </body>

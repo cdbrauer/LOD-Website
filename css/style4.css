@@ -1,31 +1,36 @@
+html{
+	min-height: calc(100vh + 1px);
+}
+
 a{
 	color: inherit;
 	text-decoration: inherit;
 }
 
+.fa{
+	cursor: pointer;
+}
+
 body{
-	width: 100%;
 	font-family: Roboto, sans-serif;
+	text-align: center;
 }
 
-header{
-	width: 100%;
-}
-
+/* Navigation Bar */
 nav{
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	/*height: 75px;*/
 	background-color: rgba(0,0,0,0.4);
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	z-index: 3;
+	z-index: 4;
 }
 
 nav img{
 	margin-left: 15px;
+	float: left;
 }
 
 nav ul{
@@ -45,24 +50,52 @@ nav i{
 	float: left;
 }
 
-footer{
-	padding: 10px 20px;
-	-webkit-user-select: none;
-	font-weight: bold;
-	color: #5b5b5b;
-	text-align: center;
+/* Menu */
+#menuClose{
+	display: none;
 }
 
-.fa{
-	cursor: pointer;
+#mainMenu{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #242424;
+	color: #fff;
+	padding: 20px;
+	z-index: 3;
+	display: none;
 }
 
-/*Parallax background*/
-.parallax {
+#mainMenu .menuColumn{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mainMenu .section{
+	display: block;
+	margin: 0 50px 30px 0;
+	line-height: 150%;
+	text-align: left;
+}
+
+#mainMenu h1 {
+	font-family: Poppins, sans-serif;
+	text-transform: uppercase;
+}
+
+#mainMenu li {
+	margin-left: 20px;
+}
+
+/* Page Sections */
+.page .section{
 	/* Full height */
 	height: 100vh;
 	min-height: 500px;
+}
 
+.parallax {
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -70,21 +103,82 @@ footer{
 	background-size: cover;
 }
 
-.parallax h2{
-	padding-top: 210px;
-	text-align: center;
+.page .section h1{
+	padding: 60px 0;
 	font-family: 'Oswald', serif;
-	font-size: 5em;
+	font-size: 3.5em;
 	color: #fff;
 	font-weight: bold;
 	letter-spacing: 4px;
 	text-transform: uppercase;
+}
+
+.page .vc h1{
+	padding-bottom: 0;
+	padding-top: calc(50vh - 170px);
+	font-size: 5em;
+	font-weight: bold;
+	letter-spacing: 4px;
 	line-height: 120%;
 }
 
+#mainHome h1{
+	padding-top: calc(50vh - 200px);
+}
+
+.page .section h2{
+	padding: 20px 0 20px 0;
+	margin-bottom: 15px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+	color: #5b5b5b;
+	font-weight: bold;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	border-top: 4px solid #5b5b5b;
+	border-bottom: 4px solid #5b5b5b;
+}
+
+.page .section h3 {
+	font-size: 1.2em;
+	margin: 0 12px .5em 0;
+}
+
+.page .section p {
+	line-height: 120%;
+	margin: 0 12px .5em 0;
+}
+
+.page .section ul {
+	list-style-type: square;
+	margin: 0 12px .5em 0;
+}
+
+.page .section li {
+	margin-left: 1.25em;
+}
+
+.page .section img {
+	margin: 0 12px .5em 0;
+	width: 95%;
+}
+
+.navbarSpacer{
+	height: 75px;
+}
+
 .halfSection{
-	width: 49%;
+	width: 48%;
 	display: inline-block;
+	/*border: 1px dotted red;*/
+	vertical-align:top;
+}
+
+.quarterSection{
+	width: 24%;
+	display: inline-block;
+	/*border: 1px dotted red;*/
+	vertical-align:top;
 }
 
 .rightAlign{
@@ -102,7 +196,6 @@ footer{
 .buttons{
 	width: 100%;
 	padding-top: 60px;
-	text-align: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.1em;
 	color: #fff;
@@ -119,70 +212,25 @@ footer{
 	cursor: pointer;
 }
 
-#menuClose{
+/* Pages */
+.page{
 	display: none;
 }
 
-#mainMenu{
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #242424;
-	color: #fff;
-	padding: 20px;
-	z-index: 2;
-	display: none;
-	text-align: center;
+#homepage{
+	display: initial;
 }
 
-#mainMenu .menuColumn{
-	display: inline-block;
-	float: left;
-}
+/* Background Images */
+#mainHome{background-image: url('../img/IMG_0032.JPG');}
+#weekendsHome{background-image: url('../img/IMG_0973.JPG');}
+#adultHome{background-image: url('../img/IMG_2349.JPG');}
+#studentsHome{background-image: url('../img/IMG_1643.JPG');}
+#serveHome{background-image: url('../img/IMG_0001.JPG');}
+.missionBanner{background-image: url('../img/IMG_1773.JPG');}
 
-#mainMenu section{
-	display: block;
-	margin: 0 50px 30px 0;
-	line-height: 150%;
-	text-align: left;
-}
-
-#mainMenu h3 {
-	font-family: Poppins, sans-serif;
-	text-transform: uppercase;
-}
-
-#mainMenu li {
-	margin-left: 20px;
-}
-
-#mainHome{
-	/* The image used */
-	background-image: url('../img/IMG_0032.JPG');
-}
-
-#weekendsHome{
-	/* The image used */
-	background-image: url('../img/IMG_0973.JPG');
-}
-
-#adultHome{
-	/* The image used */
-	background-image: url('../img/IMG_2349.JPG');
-}
-	
-#studentsHome{
-	/* The image used */
-	background-image: url('../img/IMG_1643.JPG');
-}
-	
-#serveHome{
-	/* The image used */
-	background-image: url('../img/IMG_0001.JPG');
-}
-
-#floatingFooter{
+/* Floating Footer */
+.floatingFooter{
 	width: 100%;
 	/*height: 75px;*/
 	background-color: rgba(0,0,0,0.4);
@@ -192,28 +240,40 @@ footer{
 	padding-left: 20px;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	text-align: center;
 	-webkit-user-select: none;
+	display: none;
 }
 
-#floatingFooter ul{
+.floatingFooter ul{
 	color: #fff;
 	font-size: 17px;
 	display: inline-block;
 }
 
-#floatingFooter li{
+.floatingFooter li{
 	padding: 20px 40px;
 	display: inline-block;
 	cursor: pointer;
 }
 
-#floatingFooter i{
+.floatingFooter i{
 	color: #fff;
 	padding: 20px 60px;
 	display: inline-block;
 	cursor: pointer;
 	float: right;
+}
+
+#homepageFooter{
+	display: initial;
+}
+
+/* Footer */
+footer{
+	padding: 10px 20px;
+	-webkit-user-select: none;
+	font-weight: bold;
+	color: #5b5b5b;
 }
 
 #footerIcons i{
@@ -231,7 +291,7 @@ footer{
 	float: right;
 }
 
-/*^^ Desktop ^^*/
+/* ^^ Desktop ^^ */
 
 /*Tablet*/
 @media only screen and (max-width: 1024px) {

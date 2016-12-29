@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<title>Light of the Desert Lutheran Church</title><!--[if IE]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="css/editStyle.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
+            authDomain: "lod-website-d1c63.firebaseapp.com",
+            databaseURL: "https://lod-website-d1c63.firebaseio.com",
+            storageBucket: "lod-website-d1c63.appspot.com",
+            messagingSenderId: "98081039336"
+        };
+
+        firebase.initializeApp(config);
+
+        function signIn() {
+            var user = firebase.auth().currentUser;
+
+            if (!user) {
+                console.log("Not signed in!");
+
+                var provider = new firebase.auth.GoogleAuthProvider();
+                //provider.addScope('https://www.googleapis.com/auth/plus.login');
+
+                firebase.auth().signInWithRedirect(provider);
+
+                /*firebase.auth().getRedirectResult().then(function(result) {
+                    // The signed-in user info.
+                    var user = result.user;
+
+                    if (user) {
+                        console.log("Creating user");
+
+                        var ref = firebase.database().ref("users");
+                        ref.child(user.uid).set("1");
+                    }
+                }).catch(function(error) {});*/
+
+                firebase.auth().onAuthStateChanged(function(user) {
+                    if (user) {
+                        console.log("Creating user");
+
+                        var ref = firebase.database().ref("users");
+                        ref.child(user.uid).set("1");
+                    }
+                    else {
+                        console.log("Error");
+                    }
+                });
+            }
+
+            /*var provider = new firebase.auth.GoogleAuthProvider();
+            provider.addScope('https://www.googleapis.com/auth/plus.login');
+
+            firebase.auth().signInWithPopup(provider).then(function(result) {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                var token = result.credential.accessToken;
+                // The signed-in user info.
+                var user = result.user;
+                // ...
+            }).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // The email of the user's account used.
+                var email = error.email;
+                // The firebase.auth.AuthCredential type that was used.
+                var credential = error.credential;
+                // ...
+            });*/
+        }
+	</script>
+
+	<script src="js/database.js"></script>
+
+</head>
+
+<body>
+
+    <button onclick="signIn()">Sign in</button>
+
+</body>
+
+</html>

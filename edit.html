@@ -23,72 +23,18 @@
         };
 
         firebase.initializeApp(config);
-
-        function signIn() {
-            var user = firebase.auth().currentUser;
-
-            if (!user) {
-                console.log("Not signed in!");
-
-                var provider = new firebase.auth.GoogleAuthProvider();
-                //provider.addScope('https://www.googleapis.com/auth/plus.login');
-
-                firebase.auth().signInWithRedirect(provider);
-
-                /*firebase.auth().getRedirectResult().then(function(result) {
-                    // The signed-in user info.
-                    var user = result.user;
-
-                    if (user) {
-                        console.log("Creating user");
-
-                        var ref = firebase.database().ref("users");
-                        ref.child(user.uid).set("1");
-                    }
-                }).catch(function(error) {});*/
-
-                firebase.auth().onAuthStateChanged(function(user) {
-                    if (user) {
-                        console.log("Creating user");
-
-                        var ref = firebase.database().ref("users");
-                        ref.child(user.uid).set("1");
-                    }
-                    else {
-                        console.log("Error");
-                    }
-                });
-            }
-
-            /*var provider = new firebase.auth.GoogleAuthProvider();
-            provider.addScope('https://www.googleapis.com/auth/plus.login');
-
-            firebase.auth().signInWithPopup(provider).then(function(result) {
-                // This gives you a Google Access Token. You can use it to access the Google API.
-                var token = result.credential.accessToken;
-                // The signed-in user info.
-                var user = result.user;
-                // ...
-            }).catch(function(error) {
-                // Handle Errors here.
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                // The email of the user's account used.
-                var email = error.email;
-                // The firebase.auth.AuthCredential type that was used.
-                var credential = error.credential;
-                // ...
-            });*/
-        }
 	</script>
 
 	<script src="js/database.js"></script>
+    <script src="js/signin.js"></script>
 
 </head>
 
 <body>
 
     <button onclick="signIn()">Sign in</button>
+    <button onclick="testWrite()">Test</button>
+    <textarea id="passwordField" placeholder="Password" cols="50"></textarea>
 
 </body>
 

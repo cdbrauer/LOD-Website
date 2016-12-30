@@ -1,3 +1,5 @@
+var lastHash = "#home";
+
 function getWindowSize() {
 	var viewPortWidth;
 	var viewPortHeight;
@@ -31,16 +33,12 @@ function setHeaderFooter(){
 	var v = viewPortHeight;
 	var h = document.getElementById('bodyContent').clientHeight;
 	h -= v;
-	h = Math.min(0, abs(h));
+	h = Math.max(0, h);
 
 	$("#navbar").css("top", Math.min(0, (h) - $(this).scrollTop()));
 	$("#mainMenu").css("top", Math.min(0, (h) - $(this).scrollTop()));
 	$(".floatingFooter").css("bottom", Math.max(0, $(this).scrollTop() - (h)));
 }
-
-$(window).scroll(function () {
-	setHeaderFooter();
-});
 
 // Detect Navbar Height
 function setNavbarSpacer() {
@@ -56,14 +54,16 @@ function setNavbarSpacer() {
 
 // Scroll to specific section
 function scroll(multiplier) {
+	//alert("test");
+	
 	[viewPortWidth, viewPortHeight] = getWindowSize();
+	viewPortHeight = viewPortHeight * multiplier;
 
 	closeMenu();
 
-	$('html, body').animate({
-		scrollTop: viewPortHeight*multiplier,
-		scrollLeft: 0
-	}, 1000);
+	$('html, body').animate({scrollTop: viewPortHeight}, 1000, function(){
+		//callback
+	});
 }
 
 // Toggle Main Menu
@@ -86,41 +86,70 @@ $(function () {
 	// Bind the event.
 	$(window).hashchange(function () {
 		// Alerts every time the hash changes
-		if (window.location.hash && window.location.hash != "#home") {
+		var hash = window.location.hash;
+
+		if (hash) {
 			// Hash found
-			var hash = window.location.hash;
-			hash += 'page';
-			var hashFooter = hash;
-			hashFooter += 'Footer';
-			//alert(hash);
 			closeMenu();
-			$(".floatingFooter").slideUp(500);
-			$(".page").fadeOut(500);
 
-			$("#fixedFooter").fadeOut(500).delay(50).fadeIn(500);
+			var section = hash.slice(-1);
 
-			$(hash).delay(550).fadeIn(500);
-			$(hashFooter).delay(550).slideDown(500);
+			if (!isNaN(section)) {
+				section -= 1;
+				hash = hash.slice(0, -1);
+			}
+			else {
+				section = 0;
+			}
 
-			//$("#logo").animate({ margin: '20px 0 0 0' });
+			var scrollDelay = 0;
+
+			if (hash != lastHash) {
+				lastHash = hash;
+				scrollDelay = 1050;
+
+				hash += 'page';
+				var hashFooter = hash;
+				hashFooter += 'Footer';
+
+				$(".floatingFooter").slideUp(500);
+				$(".page").fadeOut(500);
+				$("#fixedFooter").fadeOut(500).delay(50).fadeIn(500);
+				$(hash).delay(550).fadeIn(500);
+				$(hashFooter).delay(550).slideDown(500);
+			}
+
+			$(this).delay(scrollDelay).queue(function () {
+				scroll(section);
+				$(this).dequeue();
+			});
 		}
 		else {
-			// No hash found or #home
+			// No hash found
+			lastHash = "#home";
 			closeMenu();
+			window.location.hash = "#home";
+
 			$(".floatingFooter").not("#homepageFooter").slideUp(500);
 			$(".page").not("#homepage").fadeOut(500);
-
 			$("#fixedFooter").fadeOut(500).delay(50).fadeIn(500);
-
 			$("#homepage").delay(550).fadeIn(500);
 			$("#homepageFooter").delay(550).slideDown(500);
 		}
 	});
 });
 
-$(document).ready(function() {
-	$(window).hashchange();
+$(window).scroll(function () {
+	setHeaderFooter();
+});
+
+$(document).ready(function () {
 	setNavbarSpacer();
 	setHeaderFooter();
-	$('.popup-youtube').magnificPopup({type:'iframe'});
+
+	if (window.location.hash && window.location.hash != "#home") {
+		$(window).delay(500).hashchange();
+	}
+
+	$('.popup-youtube').magnificPopup({ type: 'iframe' });
 });

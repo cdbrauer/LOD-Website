@@ -16,7 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
 	<link href="img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
 	
-	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.ba-hashchange.min.js"></script>
 	<script src="js/mail.min.js"></script>
 	<script src="magnific-popup/jquery.magnific-popup.js"></script>
@@ -29,11 +29,11 @@
 			<div class="navbarSpacer">&nbsp;</div>
 			<div class="menuColumn">
 				<div class="section">
-					<h1>Who We Are</h1>
+					<a href="#mission"><h1>Who We Are</h1></a>
 					<ul>
-						<li>Mission</li>
-						<li>Organizations</li>
-						<li>Leadership</li>
+						<li><a href="#mission">Our Mission</a></li>
+						<li><a href="#mission2">Organizations</a></li>
+						<li><a href="#mission3">Leadership</a></li>
 					</ul>
 				</div>
 				<div class="section">
@@ -103,19 +103,19 @@
 			</div>
 		</div>
 		<nav id="navbar">
-			<a href="#home" onclick="scroll(0)"><img alt="LOD Logo" src="img/Light_of_the_Desert_15_W75T.png"/></a>
+			<a href="#home"><img alt="LOD Logo" src="img/Light_of_the_Desert_15_W75T.png"/></a>
 			<ul>
 				<li><a href="#mission">Who We Are</a></li>
 				<li><a href="#sundays">Services</a></li>
 				<li><a href="#resources">Watch Messages</a></li>
-				<li><a href="#resources">Calendar</a></li>
+				<li><a href="#resources2">Calendar</a></li>
 				<li><a href="#give">Give</a></li>
 				<li>
+					<i class="fa fa-youtube-play" title="YouTube"></i>
 					<i class="fa fa-facebook-f" title="Facebook"></i>
 					<i class="fa fa-twitter" title="Twitter"></i>
-					<i class="fa fa-youtube-play" title="YouTube"></i>
-					<i class="fa fa-bars" id="menuOpen" title="Menu" onclick="openMenu()"></i>
-					<i class="fa fa-times" id="menuClose" title="Close Menu" onclick="closeMenu()"></i>
+					<a href="javascript:openMenu();"><i class="fa fa-bars accentColor1" id="menuOpen" title="Menu"></i></a>
+					<a href="javascript:closeMenu();"><i class="fa fa-times accentColor1" id="menuClose" title="Close Menu"></i></a>
 				</li>
 			</ul>
 		</nav>
@@ -127,13 +127,13 @@
 				<h1>Welcome to<br/> Light of the Desert</h1>
 				<div class="buttons">
 					<div class="halfSection rightAlign vc">
+						<a href="#mission"><div class="button">Our Mission and Beliefs</div></a>
+						<br/>
+						<div class="button">Watch our latest messsage</div>
+					</div><div class="halfSection leftAlign">
 						<div class="button">Location and Services</div>
 						<br/>
 						<div class="button">Event Calendar</div>
-					</div>
-					<div class="halfSection leftAlign">
-						<div class="button">Watch our latest messsage</div>
-						<br/>
 						<div class="button">Give</div>
 					</div>
 				</div>
@@ -146,8 +146,7 @@
 					<br/>
 					<div class="halfSection rightAlign">
 						<div class="button">Adult Sunday School</div>
-					</div>
-					<div class="halfSection leftAlign">
+					</div><div class="halfSection leftAlign">
 						<div class="button">Childrens Church</div>
 					</div>
 				</div>
@@ -185,40 +184,79 @@
 			<div class="section">
 				<div class="missionBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>Who We Are</h1>
+					<h1>Our Mission</h1>
 				</div>
-				<h2>Mission</h2>
-				<div class="quarterSection leftAlign">
-					<h3>Stuff</h3>
+				<div class="nSection">
+					<h3>To share the love and the light of Jesus Christ so all people may know God</h3>
 				</div>
-				<div class="quarterSection leftAlign">
-					<h3>More Stuff</h3>
-					<img src="img/IMG_1405.JPG"/>
+				<div class="nSection">
+					<blockquote>"For God so loved the world that he gave his only Son, so that everyone who believes in him may not perish but may have eternal life." John 3:16</blockquote>
+					<blockquote>"Go therefore and make disciples of all nations." Matthew 28:19</blockquote>
+					<blockquote>"You are the light of the world...let your light shine before others, so that they may see your good works and give glory to your Father in heaven." Matthew 5:14,16</blockquote>
+					<blockquote>"This is my command: Love each other." John 15b</blockquote>
 				</div>
-				<div class="quarterSection leftAlign">
-					<h3>Even More Stuff</h3>
-					<p>lawe ub hfi juw shfie avf uibn iesal brvfio ubfvd sbwvfb ls dvbgs ew ov bfdsbgr vldb sbuvf gt iedb rgus druv bdru bouf</p>
-					<p>lawe ub hfi juw shfie avf uibn iesal brvfio ubfvd sbwvfb ls dvbgs ew ov bfdsbgr vldb sbuvf gt iedb rgus druv bdru bouf</p>
+				<div class="quarterSection">
+					<h3>Gather</h3>
+					<hr/>
+					<p><b>people to meet Jesus</b></p>
+				</div><div class="quarterSection">
+					<h3>Grow</h3>
+					<hr/>
+					<p><b>to become more like Jesus</b></p>
+				</div><div class="quarterSection">
+					<h3>Go</h3>
+					<hr/>
+					<p><b>spread the love of Jesus</b></p>
 				</div>
-				<div class="quarterSection leftAlign">
-					<h3>A List</h3>
-					<ul>
-						<li>Lorem</li>
-						<li>Ipsum</li>
-						<li>Dolor</li>
-					</ul>
+				<br/>
+				<div class="halfSection">
+					<h2 class="accentColor1bg sectionButton">Our Strategy</h2>
+				</div><div class="halfSection">
+					<h2 class="accentColor2bg sectionButton">Our Beliefs</h2>
+				</div>
+				<br/>
+				<div class="lightbox">
+					<div class="leftAlign nSection">
+						<h3>Our Strategy</h3>
+						<p><b>Reach Out</b> with the Good News of Jesus in a language people can understand because all people matter to God.<br/></p>
+						<p><b>Participate Fully</b> with a servant's heart, in mission activities based on our giftedness and passions.<br/></p>
+						<p><b>Worship</b> in a way that is inspiring, culturally relevant, participatory, grounded in the Bible, and our best.<br/></p>
+						<p><b>Grow</b> as obedient disciples of Jesus by listening to God in faithful study, prayer, and service, by acting on what God tells us, and by training others how to listen and act.<br/></p>
+						<p><b>Care</b> for the whole family, all ages and stages.<br/></p>
+						<p><b>Share</b> the resources God has given us to steward, with generous and compassionate hearts; giving to God and giving to those in need.<br/></p>
+					</div>
+				</div>
+				<div class="lightbox">
+					<div class="leftAlign nSection">
+						<h3>Our Beliefs</h3>
+						<ul>
+							<li>Jesus Christ is the Son of God.</li>
+							<li>Jesus lived on the earth, died on the cross, and was raised from the dead.</li>
+							<li>Everyone is born with a sin disease and is separated from God; that separation can only be cured by trusting your life to Jesus.</li>
+							<li>The Bible is the Word of God.</li>
+							<li>Worship is our expression of love to God.</li>
+							<li>The Church is all people who have trusted their lives to Christ; it is God's plan for reaching the world with the Good News of Jesus.</li>
+							<li>Sacraments, Baptism and Holy Communion, are God's gifts to us. We understand a sacrament to be something that Christ Himself commanded us to do; it involves an earthly element (water, bread, wine), and is a promise by God and a celebration of forgiveness and new life.</li>
+							<li>Jesus Christ will one day return to judge the living and the dead.</li>
+							<li>Followers of Jesus are called to grow in a personal relationship with Jesus, to do what Jesus tells us to do, to allow God's Word to change us to be more like Jesus, and to share the love of Jesus with others.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 
 			<div class="section">
-				<div class="navbarSpacer">&nbsp;</div>
-				<h2>Organizations</h2>
+				<div class="missionBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Organizations</h1>
+				</div>
 				<p>Lorem Ipsum</p>
 			</div>
 
 			<div class="section">
-				<div class="navbarSpacer">&nbsp;</div>
-				<h2>Leadership</h2>
+				<div class="missionBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Leadership</h1>
+				</div>
 				<p>Lorem Ipsum</p>
 			</div>
 		</div>
@@ -228,9 +266,9 @@
 		<img alt="LOD Logo" src="img/Light_of_the_Desert_15_G75T.png"/>
 		<br/>
 		<div id="footerIcons">
+			<i class="fa fa-youtube-play"></i>
 			<i class="fa fa-facebook-f"></i>
 			<i class="fa fa-twitter"></i>
-			<i class="fa fa-youtube-play"></i>
 		</div>
 		<div id="leftFooter">© 2016 Light of the Desert Lutheran Church | Member LCMC</div>
 		<div id="rightFooter">33175 N Cave Creek Road | Cave Creek, AZ | 85331 | 480-488-2716</div>
@@ -238,21 +276,21 @@
 
 	<div class="floatingFooter" id="homepageFooter">
 		<ul>
-			<li onclick="scroll(1)">Sundays</li>
-			<li onclick="scroll(2)">Adults</li>
-			<li onclick="scroll(3)">Kids and Students</li>
-			<li onclick="scroll(4)">Serve</li>
+			<li><a href="#home2">Sundays</a></li>
+			<li><a href="#home3">Adults</a></li>
+			<li><a href="#home4">Kids and Students</a></li>
+			<li><a href="#home5">Serve</a></li>
 		</ul>
-		<i class="fa fa-chevron-up" onclick="scroll(0)"></i>
+		<a href="#home"><i class="fa fa-chevron-up"></i></a>
 	</div>
 
 	<div class="floatingFooter" id="missionpageFooter">
 		<ul>
-			<li onclick="scroll(0)">Mission</li>
-			<li onclick="scroll(1)">Organizations</li>
-			<li onclick="scroll(2)">Leadership</li>
+			<li><a href="#mission">Mission</a></li>
+			<li><a href="#mission2">Organizations</a></li>
+			<li><a href="#mission3">Leadership</a></li>
 		</ul>
-		<i class="fa fa-chevron-up" onclick="scroll(0)"></i>
+		<a href="#mission"><i class="fa fa-chevron-up"></i></a>
 	</div>
 </body>
 </html>

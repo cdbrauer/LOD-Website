@@ -122,7 +122,7 @@
 	</header>
 
 	<div id="bodyContent">
-		<div class="page" id="homepage">
+		<div id="homepage" class="page">
 			<div id="mainHome" class="section parallax vc">
 				<h1>Welcome to<br/> Light of the Desert</h1>
 				<div class="buttons">
@@ -180,7 +180,7 @@
 			</div>
 		</div>
 
-		<div class="page" id="missionpage">
+		<div id="missionpage" class="page" >
 			<div class="section">
 				<div class="missionBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
@@ -195,27 +195,25 @@
 					<blockquote>"You are the light of the world...let your light shine before others, so that they may see your good works and give glory to your Father in heaven." Matthew 5:14,16</blockquote>
 					<blockquote>"This is my command: Love each other." John 15b</blockquote>
 				</div>
-				<div class="quarterSection">
-					<h3>Gather</h3>
-					<hr/>
-					<p><b>people to meet Jesus</b></p>
-				</div><div class="quarterSection">
-					<h3>Grow</h3>
-					<hr/>
-					<p><b>to become more like Jesus</b></p>
-				</div><div class="quarterSection">
-					<h3>Go</h3>
-					<hr/>
-					<p><b>spread the love of Jesus</b></p>
+				<div class="nSection">
+					<div class="thirdSection">
+						<h3>Gather</h3>
+						<hr/>
+						<p><b>people to meet Jesus</b></p>
+					</div><div class="thirdSection">
+						<h3>Grow</h3>
+						<hr/>
+						<p><b>to become more like Jesus</b></p>
+					</div><div class="thirdSection">
+						<h3>Go</h3>
+						<hr/>
+						<p><b>spread the love of Jesus</b></p>
+					</div>
 				</div>
-				<br/>
-				<div class="halfSection">
-					<h2 class="accentColor1bg sectionButton">Our Strategy</h2>
-				</div><div class="halfSection">
-					<h2 class="accentColor2bg sectionButton">Our Beliefs</h2>
-				</div>
-				<br/>
-				<div class="lightbox">
+				<div id="strategyLightbox" class="lightbox">
+					<div class="spacer">
+						<a href="javascript:showLightbox(null);"><i class="fa fa-times accentColor1 lightboxClose" title="Close"></i></a>
+					</div>
 					<div class="leftAlign nSection">
 						<h3>Our Strategy</h3>
 						<p><b>Reach Out</b> with the Good News of Jesus in a language people can understand because all people matter to God.<br/></p>
@@ -226,7 +224,10 @@
 						<p><b>Share</b> the resources God has given us to steward, with generous and compassionate hearts; giving to God and giving to those in need.<br/></p>
 					</div>
 				</div>
-				<div class="lightbox">
+				<div id="beliefsLightbox" class="lightbox">
+					<div class="spacer">
+						<a href="javascript:showLightbox(null);"><i class="fa fa-times accentColor1 lightboxClose" title="Close"></i></a>
+					</div>
 					<div class="leftAlign nSection">
 						<h3>Our Beliefs</h3>
 						<ul>
@@ -241,6 +242,11 @@
 							<li>Followers of Jesus are called to grow in a personal relationship with Jesus, to do what Jesus tells us to do, to allow God's Word to change us to be more like Jesus, and to share the love of Jesus with others.</li>
 						</ul>
 					</div>
+				</div>
+				<div class="halfSection">
+					<h2 class="accentColor1bg sectionButton" onclick="showLightbox('strategy');">Our Strategy</h2>
+				</div><div class="halfSection">
+					<h2 class="accentColor2bg sectionButton" onclick="showLightbox('beliefs');">Our Beliefs</h2>
 				</div>
 			</div>
 

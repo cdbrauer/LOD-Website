@@ -61,6 +61,7 @@ function scroll(multiplier) {
 	viewPortHeight = viewPortHeight * multiplier;
 
 	closeMenu();
+	showLightbox(null);
 
 	$('html, body').animate({scrollTop: viewPortHeight}, 1000, function(){
 		//callback
@@ -72,6 +73,7 @@ function openLightbox(name){
 	if (name) {
 		name = "#" + name + "Lightbox";
 
+		$("#lightboxBack").fadeIn(500);
 		$(name).show();
 		$(name).animate({
 			marginTop: "20vh",
@@ -85,6 +87,7 @@ function openLightbox(name){
 
 function showLightbox(newLightbox){
 	if (lightboxOpen) {
+		$("#lightboxBack").fadeOut(500);
 		$(".lightbox").animate({
 			marginTop: "50vh",
 			marginBottom: "50vh",
@@ -137,6 +140,7 @@ $(window).hashchange(function () {
 	if (hash) {
 		// Hash found
 		closeMenu();
+		showLightbox(null);
 
 		var section = hash.slice(-1);
 

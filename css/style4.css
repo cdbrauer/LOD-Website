@@ -30,6 +30,11 @@ header{
 	color: #fff;
 }
 
+.accentColor1hb{
+	border: 4px solid #c59101 !important;
+	color: #c59101 !important;
+}
+
 .accentColor2{
 	color: #505050;
 }
@@ -38,6 +43,12 @@ header{
 	background-color: #505050;
 	color: #fff;
 }
+
+.accentColor2hb{
+	border: 4px solid #505050 !important;
+	color: #505050 !important;
+}
+
 
 .accentBorders{
 	border-top: 4px solid #5b5b5b;
@@ -58,7 +69,7 @@ nav{
 	background-color: rgba(0,0,0,0.4);
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	z-index: 4;
+	z-index: 6;
 	overflow: auto;
 }
 
@@ -95,7 +106,7 @@ nav i{
 	left: 0;
 	background-color: #242424;
 	padding: 20px;
-	z-index: 3;
+	z-index: 5;
 	display: none;
 }
 
@@ -148,7 +159,7 @@ nav i{
 }
 
 .page .vc h1{
-	padding-bottom: 0;
+	padding-bottom: 30px;
 	padding-top: calc(50vh - 170px);
 	font-size: 5em;
 	font-weight: bold;
@@ -177,36 +188,48 @@ nav i{
 	line-height: 120%;
 	font-weight: bold;
 	letter-spacing: 2px;
-	margin: 0 0 .5em 12px;
+	margin: 0 20px 15px 20px;
 }
 
 .page .section h4 {
 	font-size: 1.2em;
 	line-height: 120%;
-	margin: 0 0 .5em 12px;
+	margin: 0 20px 15px 20px;
+}
+
+.page .section h5 {
+	font-weight: bold;
+	margin: 0 20px 15px 20px;
 }
 
 .page .section .sectionButton{
 	padding: 60px 0;
 	cursor: pointer;
+	margin: 0;
 }
 
 .page .section p {
 	line-height: 120%;
-	margin: 0 0 .5em 12px;
+	margin: 0 20px 15px 20px;
+	text-align: left;
+}
+
+.page .section p a {
+	text-decoration: underline;
 }
 
 .page .section blockquote {
 	line-height: 120%;
-	margin: 0 0 .75em 12px;
+	margin: 0 20px 20px 20px;
 	font-style: italic;
 	font-size: 1.1em;
 }
 
 .page .section ul {
 	list-style-type: square;
-	margin: 0 0 1em 12px;
+	margin: 0 20px 15px 20px;
 	padding-left: 1.25em;
+	text-align: left;
 }
 
 .page .section li {
@@ -215,8 +238,20 @@ nav i{
 }
 
 .page .section img {
-	margin: 0 0 .5em 12px;
+	margin: 0 20px 15px 20px;
 	width: 95%;
+}
+
+.page .section .imgTile {
+	margin: 0 20px 20px 20px;
+	width: 15%;
+	min-width: 175px;
+	display: inline-block;
+}
+
+.imgTile * {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 .navbarSpacer{
@@ -228,7 +263,7 @@ nav i{
 	display: inline-block;
 	/*border: 1px dotted red;*/
 	vertical-align:top;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 .thirdSection{
@@ -236,7 +271,7 @@ nav i{
 	display: inline-block;
 	/*border: 1px dotted red;*/
 	vertical-align:top;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 .quarterSection{
@@ -244,7 +279,7 @@ nav i{
 	display: inline-block;
 	/*border: 1px dotted red;*/
 	vertical-align:top;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 .nSection{
@@ -252,11 +287,12 @@ nav i{
 	display: inline-block;
 	/*border: 1px dotted red;*/
 	vertical-align:top;
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 
 .nSection * {
 	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 .page .section hr{
@@ -269,6 +305,10 @@ nav i{
 	margin: 0;
 }
 
+.page .vc .halfSection, .page .vc .thirdSection, .page .vc .quarterSection{
+	margin: 0;
+}
+
 .lightbox{
 	display: none;
 	width: 90vw;
@@ -278,8 +318,7 @@ nav i{
 	top: 0;
 	left: 5vw;
 	overflow: auto;
-	background-color: rgba(80,80,80,0.95);
-	color: #fff;
+	z-index: 4;
 }
 
 .lightboxClose{
@@ -288,6 +327,27 @@ nav i{
 	margin: 10px 10px 0 0;
 }
 
+.lightbox .nSection {
+	text-align: left;
+}
+
+.lightbox img {
+	width: 175px !important;
+	float: left;
+	margin: 0 20px 15px 0 !important;
+}
+
+#lightboxBack{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+	cursor: default;
+}
 
 .spacer{
 	height: 40px;
@@ -307,12 +367,7 @@ nav i{
 
 .buttons{
 	width: 100%;
-	padding-top: 40px;
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.1em;
-	color: #fff;
-	font-weight: normal;
-	text-transform: uppercase;
+	text-align: center;
 }
 
 .button{
@@ -322,6 +377,9 @@ nav i{
 	padding: 12px;
 	margin: 12px;
 	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 /* Pages */
@@ -355,6 +413,7 @@ nav i{
 	display: none;
 	color: #fff;
 	overflow: auto;
+	z-index: 2;
 }
 
 .floatingFooter ul{

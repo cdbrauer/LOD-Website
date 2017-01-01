@@ -1,12 +1,29 @@
+function onLoad() {
+    console.log("onload");
+
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        var email = user.email;
+        var password = user.password;
+
+        console.log(email + ", " + password);
+
+        document.getElementById("username").value = email;
+        document.getElementById("password").value = password;
+    }
+}
+
 function signIn() {
     var user = firebase.auth().currentUser;
 
     if (!user) {
         console.log("Not signed in!");
 
-        var password = document.getElementById("passwordField").value;
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
 
-        firebase.auth().signInWithEmailAndPassword("jxxb0000@gmail.com", password).catch(function(error) {
+        firebase.auth().signInWithEmailAndPassword(username, password).catch(function(error) {
             // Handle Errors here.
             var errorMessage = error.message;
 

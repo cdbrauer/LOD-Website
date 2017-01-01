@@ -30,11 +30,17 @@
 
 </head>
 
-<body>
+<body onload="onLoad();">
 
-    <button onclick="signIn()">Sign in</button>
+    <form onsubmit="signIn(); return false;">
+        <p>Sign In</p>
+
+        <input type="text" id="username" value=""/>
+        <input type="text" id="password" value=""/>
+        <input type="submit" value="Sign In"/>
+    </form>
+
     <button onclick="testWrite()">Test</button>
-    <textarea id="passwordField" placeholder="Password" cols="50"></textarea>
 
 </body>
 

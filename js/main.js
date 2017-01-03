@@ -132,6 +132,19 @@ $(document).click(function (event) {
 	}
 })
 
+// Initialize Map
+/*function initMap() {
+	var uluru = {lat: 33.785817, lng: -111.970387};
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 16,
+		center: uluru
+	});
+	var marker = new google.maps.Marker({
+		position: uluru,
+		map: map
+	});
+}*/
+
 // Change displayed content based on hash
 $(window).hashchange(function () {
 	// Alerts every time the hash changes
@@ -167,6 +180,10 @@ $(window).hashchange(function () {
 			$("#fixedFooter").fadeOut(500).delay(50).fadeIn(500);
 			$(hash).delay(550).fadeIn(500);
 			$(hashFooter).delay(550).slideDown(500);
+
+			/*if (hash == "#sundayspage") {
+				setTimeout(initMap, 1050);
+			}*/
 		}
 
 		$(this).delay(scrollDelay).queue(function () {

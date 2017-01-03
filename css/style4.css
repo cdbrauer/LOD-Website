@@ -167,11 +167,11 @@ nav i{
 	margin-bottom: 0;
 }
 
-#mainHome h1{
+#mainHome h1, .h1{
 	padding-top: calc(50vh - 200px);
 }
 
-.page .section h2{
+.page .section h2, .h2{
 	padding: 20px 0;
 	margin-bottom: 40px;
 	font-family: 'Oswald', serif;
@@ -182,7 +182,7 @@ nav i{
 	text-transform: uppercase;
 }
 
-.page .section h3 {
+.page .section h3, .h3 {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.2em;
 	line-height: 120%;
@@ -191,13 +191,13 @@ nav i{
 	margin: 0 20px 15px 20px;
 }
 
-.page .section h4 {
+.page .section h4, .h4 {
 	font-size: 1.2em;
 	line-height: 120%;
 	margin: 0 20px 15px 20px;
 }
 
-.page .section h5 {
+.page .section h5, .h5 {
 	font-weight: bold;
 	margin: 0 20px 15px 20px;
 }
@@ -247,6 +247,11 @@ nav i{
 	width: 15%;
 	min-width: 175px;
 	display: inline-block;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
 }
 
 .imgTile * {
@@ -398,6 +403,7 @@ nav i{
 #studentsHome{background-image: url('../img/IMG_1643.JPG');}
 #serveHome{background-image: url('../img/IMG_0001.JPG');}
 .missionBanner{background-image: url('../img/IMG_1773.JPG');}
+.sundaysBanner{background-image: url('../img/IMG_2426.JPG');}
 
 /* Floating Footer */
 .floatingFooter{

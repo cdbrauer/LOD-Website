@@ -17,10 +17,26 @@
 	<link href="img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
 	
 	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/get-browser.min.js"></script>
 	<script src="js/jquery.ba-hashchange.min.js"></script>
 	<script src="js/mail.min.js"></script>
 	<script src="magnific-popup/jquery.magnific-popup.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
+	    authDomain: "lod-website-d1c63.firebaseapp.com",
+	    databaseURL: "https://lod-website-d1c63.firebaseio.com",
+	    storageBucket: "lod-website-d1c63.appspot.com",
+	    messagingSenderId: "98081039336"
+	  };
+
+	  firebase.initializeApp(config);
+	</script>
+	<script src="js/database.js"></script>
 </head>
 
 <body>
@@ -37,13 +53,13 @@
 					</ul>
 				</div>
 				<div class="section">
-					<h1>Sundays</h1>
+					<a href="#sundays"><h1>Sundays</h1></a>
 					<ul>
-						<li>Location and Services</li>
-						<li>What to Expect</li>
-						<li>Volunteer Opportunities</li>
-						<li>Adult Sunday School</li>
-						<li>Childrens Church</li>
+						<li><a href="#sundays">Location and Services</a></li>
+						<li><a href="#sundays2">What to Expect</a></li>
+						<li><a href="#sundays3">Volunteer Opportunities</a></li>
+						<li><a href="#sundays3">Adult Sunday School</a></li>
+						<li><a href="#sundays3">Childrens Church</a></li>
 					</ul>
 				</div>
 			</div>
@@ -138,7 +154,6 @@
 						<div class="button">Event Calendar</div>
 						<div class="button">Give</div>
 					</div>
-					<div class="button accentColor1hb">Walk 4 Water</div>
 				</div>
 			</div>
 
@@ -300,6 +315,7 @@
 				</div>
 			</div>
 
+			<!--Leadership-->
 			<div class="section">
 				<div class="missionBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
@@ -416,6 +432,34 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="sundayspage" class="page">
+			<div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Services</h1>
+				</div>
+				<div id="serviceTimesSection" class="nSection h2">
+					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
+				</div>
+				<p>Adult Sunday School is at 10:45 am</p>
+				<p>
+					Children Kindergarten through 5th grade are dismissed during a portion of the service for Children's Church.<br/>
+					On communion Sundays, the children return from Children's Church in time to participate in communion with their families.
+				</p>
+				<p>Nursery is available during the worship service.</p>
+				<iframe id="map" class="accentBorders" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3316.032573306088!2d-111.969936!3d33.785657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb77be4bfa2a28bea!2sLight+of+the+Desert+Lutheran+Church!5e0!3m2!1sen!2sus!4v1483411616817"></iframe>
+			</div>
+			<div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>What to Expect</h1>
+				</div>
+				<p>
+					From the fall to the spring, we offer two services, which are identical to each other. We’re a pretty relaxed bunch here and our congregation bridges many generations so there is a place for you here. We offer a blended style of music, from traditional hymns to the current Christian contemporary music. After the music is finished, there will be a sermon focused on Scripture that challenges and encourages. We offer communion on the first and third Sunday’s of each month. No dress code required here, come as you are. Most people you’ll find here on a Sunday morning are in jeans and polo or button down or supporting their favorite sports team of the season. After our services you will find many of us hanging out in the lobby, enjoying donuts, lemonade, and coffee each Sunday. We hope to see you here soon!
+				</p>
+			</div>
+		</div>
 	</div>
 
 	<footer id="fixedFooter">
@@ -445,6 +489,15 @@
 			<li><a href="#mission">Mission</a></li>
 			<li><a href="#mission2">Organizations</a></li>
 			<li><a href="#mission3">Leadership</a></li>
+		</ul>
+		<a href="#mission"><i class="fa fa-chevron-up"></i></a>
+	</div>
+
+	<div class="floatingFooter" id="sundayspageFooter">
+		<ul>
+			<li><a href="#sundays">Services</a></li>
+			<li><a href="#sundays2">What to Expect</a></li>
+			<li><a href="#sundays3">Other Sunday Events</a></li>
 		</ul>
 		<a href="#mission"><i class="fa fa-chevron-up"></i></a>
 	</div>

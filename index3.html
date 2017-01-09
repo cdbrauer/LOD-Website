@@ -24,7 +24,7 @@
 	<script src="js/main.js"></script>
 
 	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-	<script>
+	<!--Database Connection--><script>
 	  // Initialize Firebase
 	  var config = {
 	    apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
@@ -442,22 +442,34 @@
 				<div id="serviceTimesSection" class="nSection h2">
 					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
 				</div>
-				<p>Adult Sunday School is at 10:45 am</p>
-				<p>
-					Children Kindergarten through 5th grade are dismissed during a portion of the service for Children's Church.<br/>
-					On communion Sundays, the children return from Children's Church in time to participate in communion with their families.
-				</p>
-				<p>Nursery is available during the worship service.</p>
-				<iframe id="map" class="accentBorders" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3316.032573306088!2d-111.969936!3d33.785657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb77be4bfa2a28bea!2sLight+of+the+Desert+Lutheran+Church!5e0!3m2!1sen!2sus!4v1483411616817"></iframe>
+				<div class="nSection">
+					<p>Adult Sunday School is at 10:45 am</p>
+					<p>
+						Children Kindergarten through 5th grade are dismissed during a portion of the service for Children's Church.<br/>
+						On communion Sundays, the children return from Children's Church in time to participate in communion with their families.
+					</p>
+					<p>Nursery is available during the worship service.</p>
+				</div>
+				<div class="thirdSection">
+					<a href="javascript:showLightbox('adults');"><h2 class="accentColor1bg sectionButton">Adults</h2></a>
+				</div><div class="thirdSection">
+					<a href="javascript:showLightbox('kids');"><h2 class="accentColor2bg sectionButton">Kids</h2></a>
+				</div><div class="thirdSection">
+					<a href="javascript:showLightbox('serve');"><h2 class="accentColor1bg sectionButton">Serve</h2></a>
+				</div>
+				<div class="nSection">
+					<h3>What to Expect</h3>
+					<p>
+						From the fall to the spring, we offer two services, which are identical to each other. We’re a pretty relaxed bunch here and our congregation bridges many generations so there is a place for you here. We offer a blended style of music, from traditional hymns to the current Christian contemporary music. After the music is finished, there will be a sermon focused on Scripture that challenges and encourages. We offer communion on the first and third Sunday’s of each month. No dress code required here, come as you are. Most people you’ll find here on a Sunday morning are in jeans and polo or button down or supporting their favorite sports team of the season. After our services you will find many of us hanging out in the lobby, enjoying donuts, lemonade, and coffee each Sunday. We hope to see you here soon!
+					</p>
+				</div>
 			</div>
 			<div class="section">
 				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>What to Expect</h1>
+					<h1>Map</h1>
 				</div>
-				<p>
-					From the fall to the spring, we offer two services, which are identical to each other. We’re a pretty relaxed bunch here and our congregation bridges many generations so there is a place for you here. We offer a blended style of music, from traditional hymns to the current Christian contemporary music. After the music is finished, there will be a sermon focused on Scripture that challenges and encourages. We offer communion on the first and third Sunday’s of each month. No dress code required here, come as you are. Most people you’ll find here on a Sunday morning are in jeans and polo or button down or supporting their favorite sports team of the season. After our services you will find many of us hanging out in the lobby, enjoying donuts, lemonade, and coffee each Sunday. We hope to see you here soon!
-				</p>
+				<iframe id="map" class="accentBorders" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3316.032573306088!2d-111.969936!3d33.785657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb77be4bfa2a28bea!2sLight+of+the+Desert+Lutheran+Church!5e0!3m2!1sen!2sus!4v1483411616817"></iframe>
 			</div>
 		</div>
 	</div>
@@ -496,8 +508,7 @@
 	<div class="floatingFooter" id="sundayspageFooter">
 		<ul>
 			<li><a href="#sundays">Services</a></li>
-			<li><a href="#sundays2">What to Expect</a></li>
-			<li><a href="#sundays3">Other Sunday Events</a></li>
+			<li><a href="#sundays2">Map</a></li>
 		</ul>
 		<a href="#mission"><i class="fa fa-chevron-up"></i></a>
 	</div>

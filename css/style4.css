@@ -158,6 +158,10 @@ nav i{
 	margin-bottom: 40px;
 }
 
+.page .section .h1map{
+	margin-bottom: 0;
+}
+
 .page .vc h1{
 	padding-bottom: 30px;
 	padding-top: calc(50vh - 170px);
@@ -225,6 +229,10 @@ nav i{
 	font-size: 1.1em;
 }
 
+.page .section blockquote a {
+	text-decoration: underline;
+}
+
 .page .section ul {
 	list-style-type: square;
 	margin: 0 20px 15px 20px;
@@ -252,6 +260,27 @@ nav i{
 #map {
 	height: 50vh;
 	width: 100%;
+}
+
+#newsletter {
+	height: 50vh;
+    width: 100%;
+}
+
+#calendar {
+	height: 50vh;
+	width: 100%;
+    padding: 10px 0;
+}
+
+#giveWindow {
+    height: 1030px;
+	width: 100%;
+}
+
+.playlist {
+	width: 90%;
+    height: 35vh;
 }
 
 .imgTile * {

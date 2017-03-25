@@ -22,21 +22,6 @@
 	<script src="js/mail.min.js"></script>
 	<script src="magnific-popup/jquery.magnific-popup.js"></script>
 	<script src="js/main.js"></script>
-
-	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-	<!--Database Connection--><script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
-	    authDomain: "lod-website-d1c63.firebaseapp.com",
-	    databaseURL: "https://lod-website-d1c63.firebaseio.com",
-	    storageBucket: "lod-website-d1c63.appspot.com",
-	    messagingSenderId: "98081039336"
-	  };
-
-	  firebase.initializeApp(config);
-	</script>
-	<script src="js/database.js"></script>
 </head>
 
 <body>
@@ -440,7 +425,7 @@
 					<h1>Services</h1>
 				</div>
 				<div id="serviceTimesSection" class="nSection h2">
-					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
+                    9:00 am and 10:45 am
 				</div>
 				<div class="nSection">
 					<p>Adult Sunday School is at 10:45 am</p>
@@ -467,57 +452,123 @@
 			<div class="section">
 				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>Map</h1>
+					<h1 class="h1map">Map</h1>
 				</div>
-				<iframe id="map" class="accentBorders" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3316.032573306088!2d-111.969936!3d33.785657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb77be4bfa2a28bea!2sLight+of+the+Desert+Lutheran+Church!5e0!3m2!1sen!2sus!4v1483411616817"></iframe>
+				<iframe id="map" class="accentBorders" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3316.032573306088!2d-111.969936!3d33.785657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb77be4bfa2a28bea!2sLight+of+the+Desert+Lutheran+Church!5e0!3m2!1sen!2sus!4v1483411616817"></iframe>
 			</div>
 		</div>
         
         <div id="adultspage" class="page">
 			<div class="section">
-				<div class="adultsBanner parallax">
+				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>Adults</h1>
+					<h1>Adult Sunday School</h1>
 				</div>
-				<div id="serviceTimesSection" class="nSection h2">
-					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
-				</div>
-				<div class="nSection">
-					<p>Lorem ipsum</p>
+                <div class="nSection">
+                    <h3 class="leftAlign">Pastor's Class</h3>
+                    <p>'Breaking The Sound Barrier'- Hearing from God in a Chaotic World</p>
+                    <p>Sunday Mornings 10:00am</p>
+                    <p>Room 101 at the church</p>
 				</div>
             </div>
+             <div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Women</h1>
+				</div>
+                <div class="nSection">
+                    <h3 class="leftAlign">Women's Bible Study - On Break Until September</h3>
+                    <p>Thursday Evenings 6:45pm to 8:30pm</p>
+                    <p>Room 101 at the church</p>
+                    <p>Contact Patty Robinson for information: <script>insertEMail("patty");</script></p>
+                </div>
+                <div class="nSection">   
+                    <h3 class="leftAlign">Women's Bible Study - On Break Until September</h3>
+                    <p>Tuesday Mornings 9:00am</p>
+                    <p>Terravita</p>
+                    <p>Contact Carol Borchard for information: <script>insertEMailAOL("tigeret");</script></p>
+                </div>
+                <div class="nSection">
+                    <h3 class="leftAlign">LOD Women's Retreat 2016</h3>
+                    <p>SAVE THE DATES!</p>
+                    <p>April 29 - May 1, 2016</p>
+                    <p>"Lavender Springs Spa: Where women rest in God's Faithfulness"</p>
+                    <p>A spiritually nourishing retreat based on some of the Psalms</p>
+                    <p>Key verse: For the Lord is good. His unfailing love continues forever, and His faithfulness continues to each generation. Psalm 100:5</p>
+				</div>
+			</div>
+             <div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Men</h1>
+				</div>
+                <div class="nSection">
+                    <h3 class="leftAlign">Men's Bible Study - 1 Peter</h3>
+                    <p>Wednesday Mornings 6:30am</p>
+                    <p>Rustic Café, 20811 North Cave Creek Road #104, Phoenix, AZ 85024</p>
+                    <p>Contact Pastor Paul Witkop for more information: <script>insertEMail("paul");</script></p>
+                </div>
+                <div class="nSection">    
+                    <h3 class="leftAlign">Man Cave Events</h3>
+                    <p>Periodically throughout the year we will be getting together for fellowship and great discussions on what it means to live as man of God. Good food is usually also a part of the equation. Be sure to look for these dates on our <a href="#calendar">event calendar</a>.</p>
+                    <p>Contact Brian for more information: <script>insertEMail("brian");</script></p>
+                </div>
+            </div>
 		</div>
+        
         <div id="studentspage" class="page">
 			<div class="section">
-				<div class="studentsBanner parallax">
+				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>Students</h1>
+					<h1>Children's Church</h1>
 				</div>
-				<div id="serviceTimesSection" class="nSection h2">
-					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
-				</div>
-				<div class="nSection">
-					<p>Lorem ipsum</p>
+                <div class="nSection">
+                    <h3 class="leftAlign">Kids Kingdom</h3>
+                    <p>Kindergarten - 5th Grade</p>
+                    <p>Sundays during the services</p>
+                    <p>Room 102 and Youth Room</p>
+                    <p>Contact Shawn Chappel for more information: <script>insertEMail("shawn");</script></p>
 				</div>
             </div>
-		</div>
-         <div id="givepage" class="page">
-			<div class="section">
-				<div class="giveBanner parallax">
+            <div class="section">
+				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>Give</h1>
+					<h1>Junior High</h1>
 				</div>
-				<div id="serviceTimesSection" class="nSection h2">
-					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
+                <div class="nSection">
+                    <h3 class="leftAlign">JAM</h3>
+                    <p>Sunday evenings 5:00pm to 6:30pm</p>
+                    <p>Youth Room</p>
+                    <p>Contact Pastor Michael Bailey for more information: <script>insertEMail("michael");</script></p>
+                </div>
+            </div>
+            <div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Senior High</h1>
 				</div>
-				<div class="nSection">
-					<p>Lorem ipsum</p>
-				</div>
+                <div class="nSection">
+                    <h3 class="leftAlign">DV8</h3>
+                    <p>Sunday evenings 6:30pm to 8:00pm</p>
+                    <p>Youth Room</p>
+                    <p>Contact Pastor Michael Bailey for more information: <script>insertEMail("michael");</script></p>
+                </div>
             </div>
 		</div>
-         <div id="servepage" class="page">
+        
+        <div id="givepage" class="page">
 			<div class="section">
-				<div class="serveBanner parallax">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1 class="h1map">Give</h1>
+				</div>
+				<iframe id="giveWindow" class="accentBorders" scrolling="no" src="https://www.eservicepayments.com/cgi-bin/Vanco_ver3.vps?appver3=wWsk24ZWJSTZKsGd1RMKlg0BDvsSG3VIWQCPJNNxD8upkiY7JlDavDsozUE7KG0nFx2NSo8LdUKGuGuF396vbZZv7AfzEaE__EMMjNgQtuGXHubq5Z7ap5JVmPErc4ZeYHCKCZhESjGNQmZ5B-6dx-75iydCU-ZLky-ySVWox2w=&ver=3" frameborder="0"></iframe>
+            </div>
+		</div>
+        
+        <div id="servepage" class="page">
+			<div class="section">
+				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
 					<h1>Serve</h1>
 				</div>
@@ -529,23 +580,53 @@
 				</div>
             </div>
 		</div>
-         <div id="resourcespage" class="page">
+        
+        <div id="resourcespage" class="page">
 			<div class="section">
-				<div class="resourcesBanner parallax">
+				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
-					<h1>Resources</h1>
+					<h1>Messages</h1>
 				</div>
-				<div id="serviceTimesSection" class="nSection h2">
-					<script>getData("services/times", DataConverters.boldText, "serviceTimesSection")</script>
+                <div class="nSection">
+					<div class="thirdSection">
+						<h3>2017 Sermons:</h3>
+                        <iframe class="playlist" src="https://www.youtube.com/embed/videoseries?list=PLFq2n0tANEh8pf7iYpS1ii-cB-GgVHfP1" frameborder="0" allowfullscreen></iframe>
+					</div><div class="thirdSection">
+						<h3>2016 Sermons:</h3>
+                        <iframe class="playlist" src="https://www.youtube.com/embed/videoseries?list=PLFq2n0tANEh_gCbjt4jNi1DfjIS3MTDNZ" frameborder="0" allowfullscreen></iframe>
+					</div><div class="thirdSection">
+						<h3>Special Features:</h3>
+                        <iframe class="playlist" src="https://www.youtube.com/embed/videoseries?list=PLFq2n0tANEh-8CcZ2Od_jYyA0Ehtvyf_L" frameborder="0" allowfullscreen></iframe>
+					</div>
 				</div>
-				<div class="nSection">
-					<p>Lorem ipsum</p>
+                <blockquote>Click on the bars in the upper left corner of a video to show all videos in a playlist</blockquote>
+                <blockquote>To see older sermons, visit our <a href="https://www.youtube.com/channel/UCtulWXDIu4LtzFI-QgIIKnA">YouTube Channel</a></blockquote>
+            </div>
+             <div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1>Calendar</h1>
 				</div>
+                <div class="nSection">
+				    <iframe id="calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=lightofthedesert.org_ebm5j1a74t13lfb16vdbdhm4tc%40group.calendar.google.com&amp;color=%23875509&amp;ctz=America%2FPhoenix"></iframe>
+                </div>
+			</div>
+             <div class="section">
+				<div class="sundaysBanner parallax">
+					<div class="navbarSpacer">&nbsp;</div>
+					<h1 class="h1map">Newsletter</h1>
+				</div>
+                <object id="newsletter"data="files/newsletter.pdf" type="application/pdf">
+                    <p>It appears you don't have a PDF plugin for this browser. </p>
+                </object>
+                <p></p>
+                <blockquote><a href="files/newsletter.pdf">Download Newsletter</a></blockquote>
             </div>
 		</div>
-         <div id="contactpage" class="page">
+        
+        <div id="contactpage" class="page">
 			<div class="section">
-				<div class="contactBanner parallax">
+				<div class="sundaysBanner parallax">
 					<div class="navbarSpacer">&nbsp;</div>
 					<h1>Contact</h1>
 				</div>
@@ -629,7 +710,8 @@
 		<ul>
 			<li><a href="#resources">Messages</a></li>
 			<li><a href="#resources2">Calendar</a></li>
-            <li><a href="#resources3">Map</a></li>
+            <li><a href="#resources3">Newsletter
+                </a></li>
 		</ul>
 		<a href="#resources"><i class="fa fa-chevron-up"></i></a>
     </div>

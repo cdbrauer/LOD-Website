@@ -65,6 +65,7 @@ nav{
 	top: 0;
 	left: 0;
 	width: 100%;
+    min-width: 310px;
 	max-height: 75px;
 	background-color: rgba(0,0,0,0.4);
 	font-family: 'Poppins', sans-serif;
@@ -120,6 +121,7 @@ nav i{
 	margin: 0 50px 30px 0;
 	line-height: 150%;
 	text-align: left;
+    position: relative;
 }
 
 #mainMenu h1 {
@@ -134,8 +136,8 @@ nav i{
 /* Page Sections */
 .page .section{
 	/* Full height */
-	height: 100vh;
-	min-height: fit-content;
+	min-height: 100vh;
+	/*min-height: fit-content;*/
 }
 
 .parallax {
@@ -196,9 +198,10 @@ nav i{
 }
 
 .page .section h4, .h4 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 120%;
 	margin: 0 20px 15px 20px;
+    font-weight: bold;
 }
 
 .page .section h5, .h5 {
@@ -274,8 +277,10 @@ nav i{
 }
 
 #giveWindow {
-    height: 1030px;
+    min-height: 1050px;
 	width: 100%;
+    overflow:scroll;
+    overflow-x: hidden;
 }
 
 .playlist {
@@ -332,7 +337,8 @@ nav i{
 .page .section hr{
 	width: 90%;
 	border: 1px solid;
-	margin: 8px 10px !important;
+    text-align: center;
+	margin: 8px auto !important;
 }
 
 .nSection .halfSection, .nSection .thirdSection, .nSection .quarterSection{
@@ -395,6 +401,10 @@ nav i{
 	text-align: left;
 }
 
+.centerAlign{
+	text-align: center !important;
+}
+
 .clearBoth{
 	clear: both;
 }
@@ -416,6 +426,10 @@ nav i{
 	text-transform: uppercase;
 }
 
+#homepage .button{
+    /*background-color: rgba(0,0,0,0.4);*/
+}
+
 /* Pages */
 .page{
 	display: none;
@@ -426,13 +440,20 @@ nav i{
 }
 
 /* Background Images */
-#mainHome{background-image: url('../img/IMG_0032.JPG');}
-#weekendsHome{background-image: url('../img/IMG_0973.JPG');}
-#adultHome{background-image: url('../img/IMG_2349.JPG');}
-#studentsHome{background-image: url('../img/IMG_1643.JPG');}
-#serveHome{background-image: url('../img/IMG_0001.JPG');}
-.missionBanner{background-image: url('../img/IMG_1773.JPG');}
-.sundaysBanner{background-image: url('../img/IMG_2426.JPG');}
+#mainHome{background-image: url('../img/banners/LODnorth2.jpg');}
+#weekendsHome{background-image: url('../img/banners/DSC_0091%20copy.JPG');}
+#adultHome{background-image: url('../img/banners/DSC_0108.JPG');}
+#newgenHome{background-image: url('../img/banners/DSC_0498%20copy.JPG');}
+#serveHome{background-image: url('../img/banners/IMG_6052.jpg');}
+.missionBanner{background-image: url('../img/banners/DSC_0025%20copy.JPG');}
+.sundaysBanner{background-image: url('../img/banners/DSC_0091%20copy.JPG');}
+.adultsBanner{background-image: url('../img/banners/DSC_0108.JPG');}
+.studentsBanner{background-image: url('../img/banners/DSC_0940%20copy.JPG');}
+.newgenBanner{background-image: url('../img/banners/DSC_0498%20copy.JPG');}
+.giveBanner{background-image: url('../img/banners/DSC_0104%20copy.JPG');}
+.serveBanner{background-image: url('../img/banners/IMG_6052.jpg');}
+.resourcesBanner{background-image: url('../img/banners/DSC_0071%20copy.JPG');}
+.contactBanner{background-image: url('../img/banners/DSC_0101.JPG');}
 
 /* Floating Footer */
 .floatingFooter{
@@ -498,10 +519,31 @@ footer{
 /* ^^ Desktop ^^ */
 
 /*Tablet*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1000px) {
 	header{
 		padding-left: 10px;
 	}
+    
+    .navPageLink{
+        display: none;
+    }
+    
+    /* Navigation Bar */
+    nav{
+        max-height: 95px;
+    }
+
+    nav ul{
+        font-size: 35px;
+    }
+
+    nav i{
+        padding: 0 25px;
+    }
+    
+    .navPageLink{
+        display: none;
+    }
 }
 
 /*Phone - Landscape*/

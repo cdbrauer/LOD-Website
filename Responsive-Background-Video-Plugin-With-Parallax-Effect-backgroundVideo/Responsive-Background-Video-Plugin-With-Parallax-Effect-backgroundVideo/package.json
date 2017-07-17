@@ -1,0 +1,19 @@
+{
+  "name": "background-video",
+  "version": "0.2.6",
+  "description": "backgroundVideo makes your HTML5 `<video>` behave like the CSS property `background-size: cover`, making it fully responsive and scaling to aspect ratio. backgroundVideo also has parallax options.",
+  "main": "backgroundVideo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "video",
+    "parallax",
+    "background video"
+  ],
+  "author": "Sam Linnett <linnettsam@gmail.com> (http://www.samlinnett.com)",
+  "licence": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

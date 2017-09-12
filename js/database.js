@@ -9,6 +9,10 @@ function getDataList(path, dataConverter, divId) {
     firebase.database().ref(path).once("value").then(function(snapshot) {
         var events = snapshot.val();
 
+        events.map(function(event) {
+            return addTextToDiv(divId, dataConverter(events[index]));
+        });
+        
         for (var index in events) {
             if (events.hasOwnProperty(index)) {
                 addTextToDiv(divId, dataConverter(events[index]));
@@ -35,6 +39,7 @@ function getData(path, dataConverter, divId) {
  */
 function addTextToDiv(divId, text) {
     document.getElementById(divId).innerHTML += text;
+    return text;
 }
 
 /**

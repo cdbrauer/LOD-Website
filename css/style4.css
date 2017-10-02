@@ -49,6 +49,11 @@ header{
 	color: #505050 !important;
 }
 
+.link{
+    color: #c59101;
+    text-decoration: underline;
+}
+
 
 .accentBorders{
 	border-top: 4px solid #5b5b5b;
@@ -431,12 +436,8 @@ nav i{
 }
 
 /* Pages */
-.page{
+#missionpage, #sundayspage, #adultspage, #newgenpage, #givepage, #servepage, #resourcespage{
 	display: none;
-}
-
-#homepage{
-	display: initial;
 }
 
 /* Background Images */

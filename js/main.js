@@ -7,16 +7,16 @@ function getWindowSize() {
 
 	// the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
 	if (typeof window.innerWidth != 'undefined') {
-		viewPortWidth = window.innerWidth,
-		viewPortHeight = window.innerHeight
+		viewPortWidth = window.innerWidth;
+		viewPortHeight = window.innerHeight;
 	}
 
 		// IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
 		else if (typeof document.documentElement != 'undefined'
 		&& typeof document.documentElement.clientWidth !=
 		'undefined' && document.documentElement.clientWidth != 0) {
-		viewPortWidth = document.documentElement.clientWidth,
-		viewPortHeight = document.documentElement.clientHeight
+		viewPortWidth = document.documentElement.clientWidth;
+		viewPortHeight = document.documentElement.clientHeight;
 	}
 
 	// older versions of IE
@@ -215,7 +215,7 @@ $(document).ready(function () {
 
 	if (window.location.hash && window.location.hash != "#home") {
 		$(window).delay(500).hashchange();
-	}
+    }
 
 	$('.popup-youtube').magnificPopup({ type: 'iframe' });
     

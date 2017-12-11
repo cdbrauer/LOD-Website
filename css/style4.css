@@ -184,7 +184,6 @@ nav i{
 
 .page .section h2, .h2{
 	padding: 20px 0;
-	margin-bottom: 40px;
 	font-family: 'Oswald', serif;
 	font-size: 2em;
 	line-height: 120%;
@@ -320,6 +319,14 @@ nav i{
 
 .quarterSection{
 	width: 25%;
+	display: inline-block;
+	/*border: 1px dotted red;*/
+	vertical-align:top;
+	margin: 0 0 20px 0;
+}
+
+.twothirdSection{
+	width: 66.66%;
 	display: inline-block;
 	/*border: 1px dotted red;*/
 	vertical-align:top;

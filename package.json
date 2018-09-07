@@ -1,0 +1,23 @@
+{
+  "name": "LOD-Website",
+  "version": "1.0.0",
+  "description": "Website files for http://lightofthedesert.org/",
+  "scripts": {
+    "start-babel": "npx babel --watch jsx --out-dir js --presets react-app/prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Automata/LOD-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Automata/LOD-Website/issues"
+  },
+  "homepage": "https://github.com/Team-Automata/LOD-Website#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}

@@ -17,12 +17,35 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
 	<link href="img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
 
+	<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyBPHoAXMhwRg6AAcgWrlo-jsINQmGJXC5A",
+			authDomain: "lod-website-d1c63.firebaseapp.com",
+			databaseURL: "https://lod-website-d1c63.firebaseio.com",
+			projectId: "lod-website-d1c63",
+			storageBucket: "lod-website-d1c63.appspot.com",
+			messagingSenderId: "98081039336"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+	<script src="js/linkify.min.js"></script>
+	<script src="js/linkify-string.min.js"></script>
+
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/get-browser.min.js"></script>
 	<script src="js/jquery.ba-hashchange.min.js"></script>
 	<script src="js/mail.min.js"></script>
 	<script src="magnific-popup/jquery.magnific-popup.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<!--<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>-->
 </head>
 
 <body>
@@ -509,9 +532,11 @@
 					<h1>Services</h1>
 				</div>
 
-				<div id="serviceTimesSection" class="nSection h2" style="margin-bottom:0 !important">
+				<!--<div id="serviceTimesSection" class="nSection h2" style="margin-bottom:0 !important">
 					9:30 am
-				</div>
+				</div>-->
+
+				<div id="serviceTimesSection"></div>
 
 				<div class="nSection">
 					<p>Adult Education is at 10:45 am</p>
@@ -568,10 +593,12 @@
 					<div class="navbarSpacer">&nbsp;</div>
 					<h1>Adults</h1>
 				</div>
-				<div class="thirdSection">
+				<!--<div class="thirdSection">
 					<h3>Adult Education</h3>
 					<hr/>
-					<h4 class="leftAlign">Sunday Adult Education - Open Class</h4>
+
+					<div id="adultEdListSection"></div>
+					&lt;!&ndash;<h4 class="leftAlign">Sunday Adult Education - Open Class</h4>
 					<p>Sunday Mornings 10:45am</p>
 					<p>Light of the Desert</p>
 					<p>Contact John McGregor for more information:
@@ -587,24 +614,27 @@
 						<script>
 							insertEMail("paul");
 						</script>
-					</p>
-				</div><!--<div class="thirdSection">
+					</p>&ndash;&gt;
+				</div><div class="thirdSection">
 					<h3>Men’s Ministry</h3>
 					<hr/>
 
-					&nbsp;
-				</div>--><div class="thirdSection">
+					<div id="mensMinistryListSection"></div>
+				</div><div class="thirdSection">
 					<h3>Women’s Ministry</h3>
 					<hr/>
-					<h4 class="leftAlign">Women's Bible Study – Sign Up Encouraged</h4>
+
+					<div id="womensMinistryListSection"></div>
+					&lt;!&ndash;<h4 class="leftAlign">Women's Bible Study – Sign Up Encouraged</h4>
 					<p>Every other Tuesday 6:45pm to 8:30pm</p>
 					<p>Room 101 at the church</p>
 					<p>Contact Patty Robinson for more information:
 						<script>
 							insertEMail("patty");
 						</script>
-					</p>
-				</div>
+					</p>&ndash;&gt;
+				</div>-->
+				<div id="adultClassesSection"></div>
 			</div>
 		</div>
 
@@ -857,6 +887,8 @@
 		</ul>
 		<a href="#resources"><i class="fa fa-chevron-up"></i></a>
 	</div>
+
+	<script src="js/index.js"></script>
 </body>
 
 </html>

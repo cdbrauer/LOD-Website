@@ -21,6 +21,14 @@ header{
 	color: #fff;
 }
 
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
 .accentColor1{
 	color: #c59101;
 }

@@ -443,7 +443,7 @@ nav i{
 }
 
 /* Pages */
-#missionpage, #sundayspage, #adultspage, #newgenpage, #givepage, #servepage, #resourcespage{
+#missionpage, #sundayspage, #adultspage, #newgenpage, #givepage, #servepage, #resourcespage, #covidpage{
 	display: none;
 }
 

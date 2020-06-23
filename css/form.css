@@ -1,0 +1,68 @@
+/* Form */
+
+form {
+    padding: 15px;
+    margin: 0 20%; /* Media query */
+    overflow: hidden;
+    color: black;
+}
+
+form .inputBack {
+    padding: 5px;
+    margin: 0;
+    background-color: #eee
+}
+
+form .textInput, form select, form textarea {
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+    background-color: transparent;
+}
+
+form .textGrid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto auto;
+}
+
+.textGrid > div {
+    grid-column: 1 / span 2;
+}
+
+.textGrid .halfCellL {
+    grid-column: 1 / span 1;
+}
+
+.textGrid .halfCellR {
+    grid-column: 2 / span 1;
+}
+
+form .checkboxGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+form .smallNote {
+    width: 100%;
+    font-size: 0.8em;
+    margin-top: 0.5em !important;
+    text-align: center !important;
+}
+
+.submitButton {
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.page .section form hr{
+	width: 100%;
+	border: 1px solid darkgrey;
+    text-align: center;
+	margin: 20px auto !important;
+}
+
+form .nSection{
+	margin: 0;
+}

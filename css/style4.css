@@ -265,17 +265,17 @@ nav i{
 }
 
 #map {
-	height: 50vh;
+	height: 65vh;
 	width: 100%;
 }
 
 #newsletter {
-	height: 50vh;
+	height: 65vh;
     width: 100%;
 }
 
 #calendar {
-	height: 50vh;
+	height: 65vh;
 	width: 100%;
     padding: 10px 0;
 }
@@ -291,6 +291,12 @@ nav i{
 	width: 90%;
     height: 35vh;
 }
+
+.largePlaylist {
+	width: 90%;
+    height: 50vh;
+}
+
 
 .imgTile * {
 	margin-left: 0 !important;
@@ -405,6 +411,10 @@ nav i{
 	height: 40px;
 }
 
+.smalSpacer{
+	height: 20px;
+}
+
 .rightAlign{
 	text-align: right;
 }
@@ -443,7 +453,7 @@ nav i{
 }
 
 /* Pages */
-#missionpage, #sundayspage, #adultspage, #newgenpage, #givepage, #servepage, #resourcespage, #covidpage{
+#missionpage, #sundayspage, #adultspage, #newgenpage, #givepage, #servepage, #resourcespage, #covidpage, #streampage, #connectpage{
 	display: none;
 }
 
@@ -453,6 +463,7 @@ nav i{
 #adultHome{background-image: url('../img/banners/DSC_0108.JPG');}
 #newgenHome{background-image: url('../img/banners/DSC_0498%20copy.JPG');}
 #serveHome{background-image: url('../img/banners/IMG_6052.jpg');}
+.mainBanner{background-image: url('../img/banners/Building_Tower_3s.jpg');}
 .missionBanner{background-image: url('../img/banners/DSC_0025%20copy.JPG');}
 .sundaysBanner{background-image: url('../img/banners/DSC_0091%20copy.JPG');}
 .adultsBanner{background-image: url('../img/banners/DSC_0108.JPG');}

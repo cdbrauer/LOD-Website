@@ -735,14 +735,30 @@
                         <div class="textGrid">
                             <div class="halfCellL">
                                 <div class="inputBack">
-                                    <input class="textInput" type="text" name="firstname" placeholder="First Name*" required>
+                                    <input class="textInput" type="text" name="firstname1" placeholder="First Name*" required>
                                 </div>
                             </div>
 
                             <div class="halfCellR">
                                 <div class="inputBack">
-                                    <input class="textInput"  type="text" name="lastname" placeholder="Last Name*" required>
+                                    <input class="textInput"  type="text" name="lastname1" placeholder="Last Name*" required>
                                 </div>
+                            </div>
+                            
+                            <div class="halfCellL">
+                                <div class="inputBack">
+                                    <input class="textInput" type="text" name="firstname2" placeholder="First Name">
+                                </div>
+                            </div>
+
+                            <div class="halfCellR">
+                                <div class="inputBack">
+                                    <input class="textInput"  type="text" name="lastname2" placeholder="Last Name">
+                                </div>
+                            </div>
+                            
+                            <div class="rowButton" title="Add a family member">
+                                <i class="fa fa-plus-circle"></i>
                             </div>
 
                             <div class="inputBack">
@@ -765,14 +781,19 @@
                         <p class="smallNote">* Required Field</p>
                         
                         <div class="checkboxGrid">
-                            <p class="checkbox">
+                            <div class="inputContainer">
                                 <input type="checkbox" name="newsflash" value="newsflash">
-                                I would like to be added to Light of the Desert's News Flash
-                            </p>
-                            <p class="checkbox">
+                            </div>
+                            <div class="textContainer">
+                                <p>I would like to be added to Light of the Desert's News Flash</p>
+                            </div>
+                            
+                            <div class="inputContainer">
                                 <input type="checkbox" name="pastor" value="pastor">
-                                I would like a Pastor to contact me
-                            </p>
+                            </div>
+                            <div class="textContainer">
+                                <p>I would like a Pastor to contact me</p>
+                            </div>
                         </div>
 
                         <div class="g-recaptcha" data-sitekey=""></div>

@@ -23,11 +23,11 @@ form .textInput, form select, form textarea {
 form .textGrid {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto 1.8em;
 }
 
 .textGrid > div {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 
 .textGrid .halfCellL {
@@ -38,10 +38,38 @@ form .textGrid {
     grid-column: 2 / span 1;
 }
 
+.textGrid .rowButton {
+    grid-column: 3 / span 1;
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #444;
+}
+
 form .checkboxGrid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     padding-top: 15px;
+}
+
+form .checkboxGrid .inputContainer {
+    grid-column: 1 / span 1;
+    text-align: right;
+}
+
+.checkboxGrid .inputContainer input{
+        width: 15px;
+        height: 15px;
+        margin: 10px;
+    }
+
+form .checkboxGrid .textContainer{
+    grid-column: 2 / span 1;
+    vertical-align: middle;
+}
+
+form .checkboxGrid .textContainer p {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
 form .smallNote {
@@ -59,6 +87,7 @@ form .smallNote {
 .submitButton input{
     font-size: 1.2em;
     padding: 5px;
+    cursor: pointer;
 }
 
 .page .section form hr{
@@ -75,15 +104,15 @@ form .nSection{
 }
 
 /*Tablet*/
-@media only screen and (max-width: 1000px) {
-    .checkbox{
-        vertical-align: center;
-    }
-    
-    .checkbox input{
+@media only screen and (max-width: 1000px) {    
+    .checkboxGrid .inputContainer input{
         width: 40px;
         height: 40px;
-        margin-right: 15px;
+        margin: 20px;
+    }
+    
+    form .checkboxGrid .textContainer p {
+        margin-top: 20px;
     }
     
     .submitButton input{

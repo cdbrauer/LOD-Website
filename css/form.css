@@ -2,7 +2,7 @@
 
 form {
     padding: 15px;
-    margin: 0 20%; /* Media query */
+    margin: 0;
     overflow: hidden;
     color: black;
 }
@@ -40,11 +40,11 @@ form .textGrid {
 
 form .checkboxGrid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
+    padding-top: 15px;
 }
 
 form .smallNote {
-    width: 100%;
     font-size: 0.8em;
     margin-top: 0.5em !important;
     text-align: center !important;
@@ -56,13 +56,37 @@ form .smallNote {
     text-align: center;
 }
 
+.submitButton input{
+    font-size: 1.2em;
+    padding: 5px;
+}
+
 .page .section form hr{
 	width: 100%;
 	border: 1px solid darkgrey;
     text-align: center;
-	margin: 20px auto !important;
+	margin: 10px auto !important;
+    grid-column: 1 / span 2;
 }
+
 
 form .nSection{
 	margin: 0;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1000px) {
+    .checkbox{
+        vertical-align: center;
+    }
+    
+    .checkbox input{
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    
+    .submitButton input{
+        padding: 15px;
+    }
 }

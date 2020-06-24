@@ -287,14 +287,19 @@ nav i{
     overflow-x: hidden;
 }
 
-.playlist {
-	width: 90%;
-    height: 35vh;
+.playlistContainer {
+    width: 90%;
+    padding-top: 56.25%;
+    height: 0px;
+    position: relative;
 }
 
-.largePlaylist {
-	width: 90%;
-    height: 50vh;
+.playlist {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 5.56%;
 }
 
 
@@ -539,6 +544,10 @@ footer{
 
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
+    html{
+        font-size: 1.5em;
+    }
+    
 	header{
 		padding-left: 10px;
 	}
@@ -562,6 +571,76 @@ footer{
     
     .navPageLink{
         display: none;
+    }
+    
+    #mainHome h1, .h1{
+        padding-top: calc(50vh - 400px);
+    }
+    
+    .page .vc h1{
+        font-size: 3.5em;
+    }
+    
+    .button{
+        font-size: 1.5em;
+        padding: 12px;
+        margin: 12px;
+        width: 75%;
+    }
+    
+    .floatingFooter{
+        display: none !important;
+    }
+    
+    .halfSection{
+        width: 90%;
+        margin: 0 0 40px 0;
+    }
+    
+    #homepage .halfSection{
+        text-align: center;
+    }
+    
+    .nSection{
+        margin: 0 0 40px 0;
+    }
+
+
+    .thirdSection{
+        width: 90%;
+        margin: 0 0 40px 0;
+    }
+
+    .quarterSection{
+        width: 50%;
+        margin: 0 0 40px 0;
+    }
+
+    .twothirdSection{
+        width: 90%;
+        margin: 0 0 40px 0;
+    }
+    
+    .nSection .halfSection, .nSection .thirdSection{
+        margin: 0 0 40px 0;
+    }
+    
+    #leftFooter{
+        padding: 10px 10px 5px 10px;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    #rightFooter{
+        padding: 5px 10px 30px 10px;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .hideOnPhone{
+        display: none !important;
     }
 }
 

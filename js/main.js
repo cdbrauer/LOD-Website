@@ -1,5 +1,6 @@
 var lastHash = "#home";
 var lightboxOpen = false;
+var nameCount = 1;
 
 function getWindowSize() {
 	var viewPortWidth;
@@ -122,6 +123,24 @@ function closeMenu() {
 	$("#mainMenu").slideUp(500);
 	$("#menuClose").hide();
 	$("#menuOpen").show();
+}
+
+function addNameField() {
+    nameCount++;
+    
+    $(`
+        <div class="halfCellL">
+            <div class="inputBack">
+                <input class="textInput" type="text" name="firstname` + nameCount.toString() + `" placeholder="First Name">
+            </div>
+        </div>
+
+        <div class="halfCellR">
+            <div class="inputBack">
+                <input class="textInput"  type="text" name="lastname` + nameCount.toString() + `" placeholder="Last Name">
+            </div>
+        </div>
+    `).insertBefore("#addName");
 }
 
 $(document).click(function (event) {

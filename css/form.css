@@ -93,10 +93,14 @@ form .smallNote {
     text-align: center !important;
 }
 
-.g-recaptcha, .submitButton {
+.captchaContainer, .submitButton {
     width: 100%;
     text-align: center;
     margin-top: 15px;
+}
+
+.g-recaptcha{
+    display: inline-block;
 }
 
 .submitButton input{

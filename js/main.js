@@ -246,3 +246,20 @@ $(document).ready(function () {
             }
         }*/
 });
+
+var allowSubmit = false;
+
+function captchaCompleted() {
+	allowSubmit = true;
+}
+
+function captchaExpired() {
+	allowSubmit = false;
+}
+
+function captchaCheck(e) {
+	if (allowSubmit) return true;
+	e.preventDefault();
+	alert("Please complete reCaptcha before submitting");
+	return false;
+}

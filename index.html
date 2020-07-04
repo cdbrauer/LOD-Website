@@ -739,7 +739,8 @@
 				</div>
                 
 				<div class="halfSection">
-					<form action="https://lod-connection-card.azurewebsites.net/api/LODConnectionCard" method="post">
+					<form action="https://lod-connection-card.azurewebsites.net/api/LODConnectionCard" method="post" onsubmit="captchaCheck(event)">
+<!--					<form action="http://localhost:7071/api/LODConnectionCard" method="post">-->
                         <div class="textGrid">
                             <div class="halfCellL">
                                 <div class="inputBack">
@@ -826,7 +827,10 @@
                             </div>
 
                             <div class="captchaContainer">
-                                <div class="g-recaptcha" data-sitekey="6LecRKoZAAAAAAWK3r6fvIAN5wGr8upK2iBHmb2z" required></div>
+                                <div class="g-recaptcha"
+									 data-callback="captchaCompleted"
+									 data-expired="captchaExpired"
+									 data-sitekey="6LecRKoZAAAAAAWK3r6fvIAN5wGr8upK2iBHmb2z"></div>
                             </div>
 
                             <div class="submitButton">

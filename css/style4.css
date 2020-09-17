@@ -62,7 +62,6 @@ header{
     text-decoration: underline;
 }
 
-
 .accentBorders{
 	border-top: 4px solid #505050;
 	border-bottom: 4px solid #505050;
@@ -255,6 +254,12 @@ nav i{
 	text-decoration: underline;
 }
 
+.page .section .smallNote {
+	width: 60%;
+	font-size: 0.8em;
+	display: inline-block;
+}
+
 .page .section ul {
 	list-style-type: square;
 	margin: 0 20px 15px 20px;
@@ -276,6 +281,20 @@ nav i{
 	margin: 0 20px 20px 20px;
 	width: 15%;
 	min-width: 175px;
+	display: inline-block;
+}
+
+/*.page .section .imgTile2 {*/
+/*	padding: 0 20px;*/
+/*	width: initial;*/
+/*	height: 10vw;*/
+/*	display: inline-block;*/
+/*}*/
+
+.page .section .imgTileVertical {
+	margin: 0 20px;
+	width: 50%;
+	min-width: 540px;
 	display: inline-block;
 }
 
@@ -672,6 +691,20 @@ footer{
     .nSection .halfSection, .nSection .thirdSection{
         margin: 0 0 40px 0;
     }
+
+	/*.page .section .imgTile2 {*/
+	/*	padding: 0 100px;*/
+	/*	width: initial;*/
+	/*	height: 30vw;*/
+	/*	display: inline-block;*/
+	/*	clear: both;*/
+	/*}*/
+
+	.page .section .imgTileVertical {
+		margin: 0;
+		width: 100%;
+		min-width: initial;
+	}
     
     .lightbox {
         font-size: 1.5em;

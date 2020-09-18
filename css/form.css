@@ -1,7 +1,7 @@
 /* Form */
 
 form {
-    padding: 15px;
+    padding: 0;
     margin: 0;
     overflow: hidden;
     color: black;
@@ -23,6 +23,7 @@ form .textInput, form select, form textarea {
 form .textGrid {
     display: grid;
     grid-gap: 15px;
+    padding: 0 20vw;
     grid-template-columns: 1.8em auto auto auto auto auto auto 1.8em;
 }
 
@@ -109,16 +110,12 @@ form .smallNote {
     cursor: pointer;
 }
 
-.page .section form hr{
-	width: 100%;
-	border: 1px solid darkgray;
+form hr{
+    width: 100%;
     text-align: center;
-	margin: 10px auto !important;
-    grid-column: 2 / span 6;    
-}
-
-.page .section form .textGrid hr{
-	border: 1px dashed #eee;
+    margin: 10px auto !important;
+    grid-column: 2 / span 6;
+    border: 2px dashed #eee;
 }
 
 form .nSection{
@@ -126,7 +123,11 @@ form .nSection{
 }
 
 /*Tablet*/
-@media only screen and (max-width: 1000px) {    
+@media only screen and (max-width: 1000px) {
+    form .textGrid {
+        padding: 0 50px;
+    }
+
     .checkboxGrid .inputContainer input{
         width: 40px;
         height: 40px;

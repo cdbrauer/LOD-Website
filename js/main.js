@@ -1,3 +1,6 @@
+var lightboxOpen = false;
+var nameCount = 1;
+
 // Toggle Main Menu
 function openMenu() {
     $("#main-menu").slideDown(300);
@@ -13,6 +16,15 @@ function closeMenu() {
     // $("#sidebar").animate({opacity: '1'}, 300);
 }
 
+$(document).click(function (event) {
+    if (!$(event.target).closest('#main-menu').length) {
+        if ($('#main-menu').is(":visible")) {
+            closeMenu();
+        }
+    }
+})
+
+// Scroll Adjustments
 function getWindowSize() {
     var viewPortWidth;
     var viewPortHeight;
@@ -53,19 +65,6 @@ function setHeaderFooter(){
     $(".floating-footer").css("bottom", Math.max(0, $(this).scrollTop() - (h)));
 }
 
-$(document).click(function (event) {
-    if (!$(event.target).closest('#main-menu').length) {
-        if ($('#main-menu').is(":visible")) {
-            closeMenu();
-        }
-    }
-})
-
-window.onscroll = function() {
-    setHeaderFooter();
-    scrollFunction();
-};
-
 function scrollFunction() {
     const $sidebar = $("#sidebar");
     let rect = document.getElementById("sidebar-container")
@@ -88,4 +87,80 @@ function scrollFunction() {
         // }
         document.getElementById("sidebar").style.top = "0";
     }
+}
+
+window.onscroll = function() {
+    setHeaderFooter();
+    scrollFunction();
+};
+
+// Toggle Lightboxes
+function openLightbox(name){
+    if (name) {
+        name = "#" + name + "Lightbox";
+
+        $("#lightboxBack").fadeIn(500);
+        $(name).show();
+        $(name).animate({
+            marginTop: "20vh",
+            marginBottom: "20vh",
+            height: "60vh"
+        }, 500, function () {
+            lightboxOpen = true;
+        });
+    }
+}
+
+function showLightbox(newLightbox){
+    if (lightboxOpen) {
+        $("#lightboxBack").fadeOut(500);
+        $(".lightbox").animate({
+            marginTop: "50vh",
+            marginBottom: "50vh",
+            height: "0px"
+        }, 500, function () {
+            $(".lightbox").hide();
+            lightboxOpen = false;
+            openLightbox(newLightbox);
+        });
+    }
+    else{
+        openLightbox(newLightbox);
+    }
+}
+
+// Form
+function addNameField() {
+    nameCount++;
+
+    $(`
+        <div class="halfCellL">
+            <div class="inputBack">
+                <input class="textInput" type="text" name="firstname` + nameCount.toString() + `" placeholder="First Name">
+            </div>
+        </div>
+
+        <div class="halfCellR">
+            <div class="inputBack">
+                <input class="textInput"  type="text" name="lastname` + nameCount.toString() + `" placeholder="Last Name">
+            </div>
+        </div>
+    `).insertBefore("#addName");
+}
+
+var allowSubmit = false;
+
+function captchaCompleted() {
+    allowSubmit = true;
+}
+
+function captchaExpired() {
+    allowSubmit = false;
+}
+
+function captchaCheck(e) {
+    if (allowSubmit) return true;
+    e.preventDefault();
+    alert("Please complete reCaptcha before submitting");
+    return false;
 }

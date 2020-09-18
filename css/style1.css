@@ -48,6 +48,10 @@ body{
     text-align: center;
 }
 
+#body-content{
+    min-height: 100vh;
+}
+
 /* Typograpy */
 h1{
     font-size: calc(3.0 * var(--base-font));
@@ -280,8 +284,9 @@ section{
 .bg-adults{background-image: url('../img/banners/DSC_0108.JPG');}
 .bg-newgen{background-image: url('../img/banners/DSC_0498%20copy.JPG');}
 .bg-serve{background-image: url('../img/banners/IMG_6052.jpg');}
-.bg-mission{background-image: url('../img/banners/DSC_0025%20copy.JPG');}
+.bg-mission{background-image: url('../img/banners/IMG_8230_edited_s.jpg');}
 .bg-stream{background-image: url('../img/banners/IMG_20200418_145922.jpg')}
+.bg-give{background-image: url('../img/banners/DSC_0104%20copy.JPG');}
 
 hr{
     width: 35%;

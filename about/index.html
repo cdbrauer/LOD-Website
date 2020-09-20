@@ -9,7 +9,6 @@
 
     <link href="../css/reset.css" rel="stylesheet" type="text/css">
     <link href="../css/style1.css" rel="stylesheet" type="text/css">
-    <link href="../css/form.css" rel="stylesheet" type="text/css">
 
     <link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
@@ -25,61 +24,8 @@
 </a>
 
 <div id="body-content">
-    <nav id="navbar" class="lcr bg-transparent accent-text">
-        <div class="vertical-center">
-            <div class="vc-spacer">&nbsp;</div>
-            <div>
-                <a href="../index.html#home" title="Home"><img alt="LOD Logo" src="../img/Light_of_the_Desert_15_W75T.png"/></a>
-            </div>
-            <div class="vc-spacer">&nbsp;</div>
-            <div class="vc-spacer">&nbsp;</div>
-        </div>
-        <div>&nbsp;</div>
-        <div class="vertical-center">
-            <div class="vc-spacer">&nbsp;</div>
-            <div>
-                <a class="nav-link hide-on-mobile" href="../about/index.html">About</a>
-                <div class="icon-spacer hide-on-mobile">&nbsp;</div>
-                <a class="nav-link hide-on-mobile" href="../visit/index.html">Visit</a>
-                <div class="icon-spacer hide-on-mobile">&nbsp;</div>
-                <a class="nav-link hide-on-mobile" href="../stream/index.html">Stream</a>
-                <div class="icon-spacer hide-on-mobile">&nbsp;</div>
-                <a class="nav-link hide-on-mobile" href="../connect/index.html">Connect</a>
-                <div class="icon-spacer hide-on-mobile">&nbsp;</div>
-                <a class="nav-link hide-on-mobile" href="../serve/index.html">Serve</a>
-                <div class="icon-spacer hide-on-mobile">&nbsp;</div>
-                <a class="nav-link hide-on-mobile" href="../give/index.html">Give</a>
-                <div class="icon-spacer hide-on-mobile">&nbsp;</div>
-                <a class="nav-icon" href="https://www.youtube.com/channel/UCtulWXDIu4LtzFI-QgIIKnA" title="YouTube" target="_blank"><i class="fab fa-youtube accent-text"></i></a>
-                <div class="icon-spacer">&nbsp;</div>
-                <a class="nav-icon" href="https://www.facebook.com/lightofthedesertlutheran/" title="Facebook" target="_blank"><i class="fab fa-facebook-f accent-text"></i></a>
-                <div class="icon-spacer">&nbsp;</div>
-                <a class="nav-icon hide-on-desktop" href="javascript:openMenu();"><i class="fas fa-bars accent-color" id="menu-open"></i></a>
-                <a class="nav-icon hide-on-desktop" href="javascript:closeMenu();"><i class="fas fa-times accent-color" id="menu-close"></i></a>
-                <div class="icon-spacer hide-on-desktop">&nbsp;</div>
-            </div>
-            <div class="vc-spacer">&nbsp;</div>
-            <div class="vc-spacer">&nbsp;</div>
-        </div>
-    </nav>
-    <div id="main-menu" class="hide-on-desktop">
-        <div class="nav-spacer">&nbsp;</div>
-        <div class="grid">
-            <div class="grid-cell-full">
-                <a href="../index.html">Home</a>
-            </div>
-            <div class="grid-cell-half">
-                <a href="../about/index.html">About</a>
-                <a href="../visit/index.html">Visit</a>
-                <a href="../stream/index.html">Stream</a>
-            </div>
-            <div class="grid-cell-half">
-                <a href="../connect/index.html">Connect</a>
-                <a href="../serve/index.html">Serve</a>
-                <a href="../give/index.html">Give</a>
-            </div>
-        </div>
-    </div>
+    <nav id="navbar" class="lcr bg-transparent accent-text"></nav>
+    <div id="main-menu" class="hide-on-desktop"></div>
     <section id="mission" class="parallax bg-mission">
         <div class="nav-spacer">&nbsp;</div>
         <h1 class="accent-text">Our Mission</h1>
@@ -409,19 +355,13 @@
     </div>
 </div>
 <hr/>
-<footer>
-    <div class="spacer hide-on-mobile">&nbsp;</div>
-    <img class="hide-on-mobile" alt="LOD Logo" src="../img/Light_of_the_Desert_15_G75T.png" /><br/>
-    <div class="spacer hide-on-mobile">&nbsp;</div>
-    <a class="social-icon" href="https://www.youtube.com/channel/UCtulWXDIu4LtzFI-QgIIKnA" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a class="social-icon" href="https://www.facebook.com/lightofthedesertlutheran/" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <div class="hide-on-mobile">
-        <div class="lcr">
-            <div>© 2020 Light of the Desert Lutheran Church | Member LCMC</div>
-            <div>&nbsp;</div>
-            <div>33175 N Cave Creek Road | Cave Creek, AZ | 85331 | 480-488-2716</div>
-        </div>
-    </div>
-</footer>
+<footer id="footer"></footer>
+
+<script>
+    $('#navbar').load('../templates/navbar.html');
+    $('#main-menu').load('../templates/main-menu.html');
+    $('#footer').load('../templates/footer.html');
+</script>
+
 </body>
 </html>

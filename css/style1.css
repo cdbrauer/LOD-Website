@@ -183,7 +183,7 @@ nav {
     width: calc(100vw - 2 * var(--navbar-margin));
     font-size: var(--navbar-font);
     padding: var(--navbar-margin);
-    z-index: 3;
+    z-index: 4;
 }
 
 nav img, footer img{
@@ -200,6 +200,70 @@ nav .nav-link{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: var(--color-accent-dark-text);
+    margin: calc(var(--navbar-img)/2 - var(--navbar-font)/2) 0;
+}
+
+.rollover-container{
+    display: inline-block;
+    position: relative;
+}
+
+.rollover-center{
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.rollover{
+    display: none;
+    width: max-content;
+    position: relative;
+    left: -50%;
+}
+
+.rollover > .spacer{
+    height: calc(var(--navbar-font)/2 + var(--navbar-img)/2 + var(--navbar-margin));
+}
+
+.rollover > .arrow{
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.rollover > .arrow > div:nth-child(1){
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top-width: calc(1.0 * var(--navbar-font));
+    border-top-style: solid;
+    border-top-color: transparent;
+    border-right-width: calc(1.5 * var(--navbar-font));
+    border-right-style: solid;
+    border-right-color: var(--color-accent-dark);
+}
+
+.rollover > .arrow > div:nth-child(2){
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top-width: calc(1.0 * var(--navbar-font));
+    border-top-style: solid;
+    border-top-color: transparent;
+    border-left-width: calc(1.5 * var(--navbar-font));
+    border-left-style: solid;
+    border-left-color: var(--color-accent-dark);
+}
+
+.rollover > .card{
+    text-align: center;
+    background-color: var(--color-accent-dark);
+}
+
+.rollover > .card > a{
+    display: inline-block;
+    color: var(--color-accent-dark-text);
+    padding: calc(1.0 * var(--base-font)) calc(1.5 * var(--base-font));
 }
 
 #menu-close{
@@ -478,7 +542,7 @@ img{
     top: 0;
     left: 5vw;
     overflow: auto;
-    z-index: 4;
+    z-index: 5;
 }
 
 .lightboxClose{
@@ -541,7 +605,7 @@ img{
         --navbar-img: 75px;
         --navbar-font: 18px;
         --navbar-margin: 5px;
-        --corners: 2px;
+        --corners: 4px;
         --grid-gap: 3em;
     }
 

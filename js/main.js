@@ -164,3 +164,25 @@ function captchaCheck(e) {
     alert("Please complete reCaptcha before submitting");
     return false;
 }
+
+// Rollover menus
+$(function() {
+    $(".rollover-container").mouseenter(function () {
+        $(".rollover").fadeOut();
+        $(this).children(".rollover-center").children(".rollover").fadeIn();
+    }).mouseleave(function () {
+        $(this).children(".rollover-center").children(".rollover").fadeOut();
+    });
+});
+
+// $(function() {
+//     $("#rollover-container-about").mouseenter(function(){
+//         $(".rollover").slideUp();
+//         $("#rollover-about").slideDown();
+//     });
+//
+//     // $(".rollover").mouseleave(function(){
+//     //     $(".rollover").slideUp();
+//     // });
+// });
+

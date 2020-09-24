@@ -27,25 +27,17 @@
     </section>
     <div class="spacerX3">&nbsp;</div>
     <section class="grid">
-        <div class="grid-cell-full">
+        <div class="grid-cell-full grid-cell-half-desktop">
+            <div class="playlistContainer">
+                <iframe class="playlist" src="https://www.youtube.com/embed/kMjxijSW5J4?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="spacerX2">&nbsp;</div>
+
             <p>We are so excited to welcome you back to in-person worship services at Light of the Desert!</p>
             <p>Our gatherings will continue to be welcoming and friendly, but we’ll be taking some extra precautions to ensure that our LOD family stays safe. </p>
 
             <h5>Health & Safety</h5>
-            <p>We are taking some extra precautions to ensure the safety of our LOD family:</p>
-        </div>
-
-        <div class="hide-on-mobile grid-cell-quarter-desktop">&nbsp;</div>
-        <div class="grid-cell-full grid-cell-half-desktop">
-            <img src="Precautions_Desktop.png">
-            <blockquote class="fine-print">* We strongly recommend you wear a mask when you attend in-person worship. If you do not wear a mask, we will assume you have a health condition that prevents you from wearing a mask but we will not ask you about your health condition.</blockquote>
-        </div>
-        <div class="hide-on-mobile grid-cell-quarter-desktop">&nbsp;</div>
-
-        <div class="grid-cell-full">
-
-            <div class="smallSpacer">&nbsp;</div>
-
             <p>To help ensure the safety of those around you, please <a href="../stream/index.html">join us online</a> and do not come to in-person worship if you:</p>
             <ul>
                 <li>Feel sick or have had a fever in the past 24 hours</li>
@@ -57,13 +49,18 @@
             <h5>Children</h5>
             <p>Children are to stay with their families during our intergenerational, “family style” gatherings. We will not offer Sunday School at this time, but there will be coloring tables set up at the back of the room for children to use during the service. We will have a “cry room” available in the lobby where parents will be able to watch the service on a TV screen.</p>
 
-            <h5 id="reservations">Reservations</h5>
-            <p>Please reserve a space below for each person who will be attending the worship service with you:</p>
+            <h5>Reservations</h5>
+            <p>Please reserve a space below for each person who will be attending the worship service with you.</p>
+        </div>
+
+        <div class="grid-cell-full grid-cell-half-desktop">
+            <img src="Precautions_Desktop.png" alt="please leave 2 empty chairs between individuals, hand sanitizer stations are available, we strongly recommend wearing masks, we will celebrate communion using pre-packaged elements, and everyone attending will be asked to reserve a space online">
+            <blockquote class="fine-print">* We strongly recommend you wear a mask when you attend in-person worship. If you do not wear a mask, we will assume you have a health condition that prevents you from wearing a mask but we will not ask you about your health condition.</blockquote>
         </div>
 
         <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
-        <div class="grid-cell-full grid-cell-twothirds-desktop">
-            <div id="eventbrite-widget-container-121254672991"></div>
+        <div id="reservations" class="grid-cell-full grid-cell-twothirds-desktop">
+            <div id="eventbrite-widget-container"></div>
 
             <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -76,7 +73,7 @@
                     // Required
                     widgetType: 'checkout',
                     eventId: '121254672991',
-                    iframeContainerId: 'eventbrite-widget-container-121254672991',
+                    iframeContainerId: 'eventbrite-widget-container',
 
                     // Optional
                     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided

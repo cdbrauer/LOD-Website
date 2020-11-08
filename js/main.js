@@ -165,6 +165,17 @@ function captchaCheck(e) {
     return false;
 }
 
+// function resizeIFrameToFitContent(iframe) {
+//     var body = iframe.contentWindow.document.body,
+//         html = iframe.contentWindow.document.documentElement;
+//
+//     var height = Math.max( body.scrollHeight, body.offsetHeight,
+//         html.clientHeight, html.scrollHeight, html.offsetHeight );
+//
+//     console.log(height);
+//     iframe.height = height;
+// }
+
 // Rollover menus
 $(function() {
     $(".rollover-container").mouseenter(function () {
@@ -173,6 +184,12 @@ $(function() {
     }).mouseleave(function () {
         $(this).children(".rollover-center").children(".rollover").fadeOut();
     });
+
+    // console.log('Resizing iFrames...');
+    // var iframes = document.getElementsByClassName( 'frame-resize' );
+    // for(var i = 0; i < iframes.length; i++) {
+    //     resizeIFrameToFitContent( iframes[i] );
+    // }
 });
 
 // $(function() {
@@ -185,4 +202,3 @@ $(function() {
 //     //     $(".rollover").slideUp();
 //     // });
 // });
-

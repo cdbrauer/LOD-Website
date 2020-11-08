@@ -494,6 +494,11 @@ img{
     padding-left: var(--grid-padding);
 }
 
+/*.frame-resize{*/
+/*    display: inline-block;*/
+/*    width: 100%;*/
+/*}*/
+
 /* Colors */
 .accent-color{color: var(--color-accent-color);}
 .accent-light{color: var(--color-accent-light);}

@@ -344,6 +344,14 @@ section{
     border-bottom: none;
 }
 
+.photo-banner{
+    height: 450px; width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: none;
+}
+
 .bg-home{background-image: var(--main-bg-img);}
 .bg-sundays{background-image: url('../img/banners/DSC_0091%20copy.JPG');}
 .bg-adults{background-image: url('../img/banners/DSC_0108.JPG');}
@@ -352,6 +360,9 @@ section{
 .bg-mission{background-image: url('../img/banners/IMG_8230_edited_s.jpg');}
 .bg-stream{background-image: url('../img/banners/IMG_20200418_145922.jpg')}
 .bg-give{background-image: url('../img/banners/DSC_0104%20copy.JPG');}
+.bg-christmas{background-image: url('../christmas/banner.png');}
+
+
 
 hr{
     width: 35%;

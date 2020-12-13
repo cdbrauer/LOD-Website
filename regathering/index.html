@@ -61,8 +61,8 @@
         <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
         <div id="reservations" class="grid-cell-full grid-cell-twothirds-desktop">
             <div id="eventbrite-widget-container-1"></div>
-            <div class="spacerX2">&nbsp;</div>
-            <div id="eventbrite-widget-container-2"></div>
+<!--            <div class="spacerX2">&nbsp;</div>-->
+<!--            <div id="eventbrite-widget-container-2"></div>-->
 
             <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -74,7 +74,7 @@
                 window.EBWidgets.createWidget({
                     // Required
                     widgetType: 'checkout',
-                    eventId: '131629097173',
+                    eventId: '132587886939',
                     iframeContainerId: 'eventbrite-widget-container-1',
 
                     // Optional
@@ -82,16 +82,16 @@
                     onOrderComplete: exampleCallback  // Method called when an order has successfully completed
                 });
 
-                window.EBWidgets.createWidget({
-                    // Required
-                    widgetType: 'checkout',
-                    eventId: '132587886939',
-                    iframeContainerId: 'eventbrite-widget-container-2',
-
-                    // Optional
-                    iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-                });
+                // window.EBWidgets.createWidget({
+                //     // Required
+                //     widgetType: 'checkout',
+                //     eventId: '132587886939',
+                //     iframeContainerId: 'eventbrite-widget-container-2',
+                //
+                //     // Optional
+                //     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                //     onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                // });
             </script>
         </div>
         <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>

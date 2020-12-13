@@ -54,13 +54,15 @@
         </div>
 
         <div class="grid-cell-full grid-cell-half-desktop">
-            <img src="Precautions_Desktop.png" alt="please leave 2 empty chairs between individuals, hand sanitizer stations are available, we strongly recommend wearing masks, we will celebrate communion using pre-packaged elements, and everyone attending will be asked to reserve a space online">
-            <blockquote class="fine-print">* We strongly recommend you wear a mask when you attend in-person worship. If you do not wear a mask, we will assume you have a health condition that prevents you from wearing a mask but we will not ask you about your health condition.</blockquote>
+            <img src="Precautions_Desktop.png" alt="please leave 2 empty chairs between individuals, hand sanitizer stations are available, we require face coverings, we will celebrate communion using pre-packaged elements, and everyone attending will be asked to reserve a space online">
+            <!--blockquote class="fine-print">* We strongly recommend you wear a mask when you attend in-person worship. If you do not wear a mask, we will assume you have a health condition that prevents you from wearing a mask but we will not ask you about your health condition.</blockquote-->
         </div>
 
         <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
         <div id="reservations" class="grid-cell-full grid-cell-twothirds-desktop">
-            <div id="eventbrite-widget-container"></div>
+            <div id="eventbrite-widget-container-1"></div>
+            <div class="spacerX2">&nbsp;</div>
+            <div id="eventbrite-widget-container-2"></div>
 
             <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -72,8 +74,19 @@
                 window.EBWidgets.createWidget({
                     // Required
                     widgetType: 'checkout',
-                    eventId: '129102806971',
-                    iframeContainerId: 'eventbrite-widget-container',
+                    eventId: '131629097173',
+                    iframeContainerId: 'eventbrite-widget-container-1',
+
+                    // Optional
+                    iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '132587886939',
+                    iframeContainerId: 'eventbrite-widget-container-2',
 
                     // Optional
                     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided

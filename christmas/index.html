@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Eve - Light of the Desert Lutheran Church</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/style1.css" rel="stylesheet" type="text/css">
+
+    <link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/mail.min.js"></script>
+</head>
+<body>
+<div id="body-content">
+    <nav id="navbar" class="lcr bg-transparent accent-text"></nav>
+    <div id="main-menu" class="hide-on-desktop"></div>
+    <div class="nav-spacer">&nbsp;</div>
+    <div class="spacerX3">&nbsp;</div>
+    <section class="grid">
+        <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
+        <div class="grid-cell-full grid-cell-twothirds-desktop">
+            <img src="christmas-web-banner.png" alt="Christmas Eve at Light of the Desert">
+        </div>
+        <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
+
+        <div class="grid-cell-full grid-cell-half-desktop">
+            <div class="playlistContainer">
+                <iframe class="playlist" src="https://www.youtube.com/embed/nFbmRedmi-g?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="grid-cell-full grid-cell-half-desktop">
+            <h5>Christmas Celebration 2020</h5>
+            <p>We are very excited to celebrate Christmas with you this year. We are committed to providing a safe and meaningful worship experience. Christmas is always a time when more people gather and so it presents some distinctive opportunities and challenges. After much prayer, discussion, and input from experts, we are excited to offer two unique worship experiences:</p>
+
+            <h5>Outdoor, In Person Christmas Eve</h5>
+            <p>We will gather at <b>4:44pm</b> to celebrate Christmas Eve. We will sing carols, light candles, and celebrate Jesus’ birth…outside in our parking lot. We will have chairs set up so that we can be socially distanced and face coverings will be required. The service will last about 40 minutes. Please dress warmly and bring a blanket if you desire. Please register your plan to attend below. If changes need to be made to these plans, we will notify you.</p>
+
+            <h5>Online Christmas Eve Celebration</h5>
+            <p>If by choice or by necessity, you cannot join us in person, we will premier another Christmas celebration online at <b>7:07pm</b>. We will sing carols and invite you to participate from your home. It will also be available on demand after 7:07pm. The service will be different from the in person gathering, but we will certainly celebrate Jesus’ birth.</p>
+
+            <p>Remember that 2020 is a very unique year and has been filled with so many challenges. Most likely, we will celebrate Christmas 2021 inside again. This year, like every year we gather to celebrate God’s immeasurable love in Jesus. He is the light of the world. John 1:5 reminds us <i>The light shines in the darkness and the darkness can never extinguish it</i>.</p>
+            <p>Come… join us for an unforgettable celebration of Jesus’ birth.</p>
+        </div>
+
+        <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
+        <div id="reservations" class="grid-cell-full grid-cell-twothirds-desktop">
+            <div id="eventbrite-widget-container"></div>
+
+            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '132588430565',
+                    iframeContainerId: 'eventbrite-widget-container',
+
+                    // Optional
+                    iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+            </script>
+        </div>
+        <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
+    </section>
+    <div class="spacerX3">&nbsp;</div>
+</div>
+<hr/>
+<footer id="footer"></footer>
+
+<script>
+    $('#navbar').load('../templates/navbar.html');
+    $('#main-menu').load('../templates/main-menu.html');
+    $('#footer').load('../templates/footer.html');
+</script>
+
+</body>
+</html>

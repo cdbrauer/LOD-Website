@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easter - Light of the Desert Lutheran Church</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="../img/Light_of_the_Desert_Favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/style1.css" rel="stylesheet" type="text/css">
+
+    <link href="../fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Roboto" rel="stylesheet">
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/mail.min.js"></script>
+</head>
+<body>
+<div id="body-content">
+    <nav id="navbar" class="lcr bg-transparent accent-text"></nav>
+    <div id="main-menu" class="hide-on-desktop"></div>
+    <section id="top" class="photo-banner bg-easter">&nbsp;</section>
+    <div class="spacerX3">&nbsp;</div>
+    <section class="grid">
+        <div class="grid-cell-full grid-cell-half-desktop">
+            <div class="playlistContainer">
+                <iframe class="playlist" src="https://www.youtube.com/embed/WyTC35YGOBw?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="grid-cell-full grid-cell-half-desktop">
+            <h5>Easter Celebration 2021</h5>
+            <p>We are very excited to celebrate the resurrection of Jesus with you this year. We are committed to providing a safe and meaningful worship experience. Easter is always a time when more people gather and so it presents some distinctive opportunities and challenges. After much prayer, discussion, and input from experts, we are excited to offer two opportunities to worship together on Easter Sunday.</p>
+
+            <h5>Outdoor, In Person Easter Celebration</h5>
+            <p>We will gather at <b>7:30 & 9:30 AM</b> to celebrate Easter outside in the Light of the Desert parking lot. We will have chairs set up so that we can be socially distanced and face coverings will be required. The service will last about an hour. Please register your plan to attend below. If changes need to be made to these plans, we will notify you.</p>
+
+            <h5>Online Easter Celebration</h5>
+            <p>If by choice or by necessity, you cannot join us in person, we will live stream both the 7:30 & 9:30 services. The services will also be available after these times, on demand on our website or on our YouTube channel.</p>
+
+            <p>These past several months have been full of challenging and uncertain circumstances. Through it all, we rest knowing that God is faithful and in control. We look forward in anticipation to the day when we can worship together free of any restrictions. In the meantime, we are still able to worship and celebrate Jesus conquering sin and death. He rose from the grave and declared victory - that victory is ours in Jesus!</p>
+            <p><i>All praise to God, the Father of our Lord Jesus Christ. It is by his great mercy that we have been born again, because God raised Jesus Christ from the dead. Now we live with great expectation…</i></p>
+            <p><i>- 1 Peter 1:3</i></p>
+        </div>
+
+        <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
+        <div id="reservations" class="grid-cell-full grid-cell-twothirds-desktop">
+            <div id="eventbrite-widget-container-1"></div>
+            <div class="spacerX2">&nbsp;</div>
+            <div id="eventbrite-widget-container-2"></div>
+            <div class="spacerX2">&nbsp;</div>
+
+            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '145945806837',
+                    iframeContainerId: 'eventbrite-widget-container-1',
+
+                    // Optional
+                    iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+
+                window.EBWidgets.createWidget({
+                    // Required
+                    widgetType: 'checkout',
+                    eventId: '145946079653',
+                    iframeContainerId: 'eventbrite-widget-container-2',
+
+                    // Optional
+                    iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                });
+
+            </script>
+        </div>
+        <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
+    </section>
+    <div class="spacerX3">&nbsp;</div>
+</div>
+<hr/>
+<footer id="footer"></footer>
+
+<script>
+    $('#navbar').load('../templates/navbar.html');
+    $('#main-menu').load('../templates/main-menu.html');
+    $('#footer').load('../templates/footer.html');
+</script>
+
+</body>
+</html>

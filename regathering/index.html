@@ -28,6 +28,10 @@
     <div class="spacerX3">&nbsp;</div>
     <section class="grid">
         <div class="grid-cell-full grid-cell-half-desktop">
+            <!--p style="background-color: yellow">In person services will resume starting Sunday, February 7th at 9:30 AM. The livestream will continue to be available on our <a href="../stream/index.html">website</a> or on our <a target="_blank" href="https://youtu.be/O0f_cVChHKw">YouTube channel</a>.</p>
+
+            <div class="spacerX2">&nbsp;</div-->
+
             <div class="playlistContainer">
                 <iframe class="playlist" src="https://www.youtube.com/embed/Q1rNQmdHbTQ?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -60,9 +64,15 @@
 
         <div class="hide-on-mobile grid-cell-sixth-desktop">&nbsp;</div>
         <div id="reservations" class="grid-cell-full grid-cell-twothirds-desktop">
-            <div id="eventbrite-widget-container-1"></div>
+            <!--p style="text-align: center; font-weight: bold">No in-person services are currently scheduled</p-->
+            <!--p style="text-align: center; font-weight: bold">Reservations for February 7th will be available soon</p-->
+<!--            <div id="eventbrite-widget-container-1"></div>-->
+<!--            <div class="spacerX2">&nbsp;</div>-->
+<!--            <div id="eventbrite-widget-container-2"></div>-->
+<!--            <div class="spacerX2">&nbsp;</div>-->
+            <div id="eventbrite-widget-container-3"></div>
             <div class="spacerX2">&nbsp;</div>
-            <div id="eventbrite-widget-container-2"></div>
+            <div id="eventbrite-widget-container-4"></div>
 
             <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -71,11 +81,33 @@
                     console.log('Order complete!');
                 };
 
+                // window.EBWidgets.createWidget({
+                //     // Required
+                //     widgetType: 'checkout',
+                //     eventId: '141458808103',
+                //     iframeContainerId: 'eventbrite-widget-container-1',
+                //
+                //     // Optional
+                //     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                //     onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                // });
+
+                // window.EBWidgets.createWidget({
+                //     // Required
+                //     widgetType: 'checkout',
+                //     eventId: '144058939165',
+                //     iframeContainerId: 'eventbrite-widget-container-2',
+                //
+                //     // Optional
+                //     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                //     onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                // });
+
                 window.EBWidgets.createWidget({
                     // Required
                     widgetType: 'checkout',
-                    eventId: '135538446141',
-                    iframeContainerId: 'eventbrite-widget-container-1',
+                    eventId: '144059268149',
+                    iframeContainerId: 'eventbrite-widget-container-3',
 
                     // Optional
                     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
@@ -85,8 +117,8 @@
                 window.EBWidgets.createWidget({
                     // Required
                     widgetType: 'checkout',
-                    eventId: '135541994755',
-                    iframeContainerId: 'eventbrite-widget-container-2',
+                    eventId: '144059811775',
+                    iframeContainerId: 'eventbrite-widget-container-4',
 
                     // Optional
                     iframeContainerHeight: 550,  // Widget height in pixels. Defaults to a minimum of 425px if not provided

@@ -601,7 +601,7 @@ img{
     width: calc(100% - 20px);
 }
 
-#embedded-calendar {
+.embedded-calendar {
     height: 65vh;
     width: calc(100% - 20px);
     padding: 10px 0;

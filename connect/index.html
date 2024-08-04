@@ -24,21 +24,6 @@
     <nav id="navbar" class="lcr bg-transparent accent-text"></nav>
     <div id="main-menu" class="hide-on-desktop"></div>
 
-    <section id="calendar" class="parallax bg-adults">
-        <div class="nav-spacer">&nbsp;</div>
-        <h1 class="accent-text">Events</h1>
-    </section>
-    <div class="spacerX3">&nbsp;</div>
-    <section class="grid">
-        <div class="grid-cell-full grid-cell-half-desktop">
-            <iframe class="embedded-calendar" src="https://lightofthedesert.churchcenter.com/registrations/events"></iframe>
-        </div>
-        <div class="grid-cell-full grid-cell-half-desktop">
-            <iframe class="embedded-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=patty%40lightofthedesert.org&amp;color=%23875509&amp;ctz=America%2FPhoenix"></iframe>
-        </div>
-    </section>
-    <div class="spacerX3">&nbsp;</div>
-
     <section id="adults" class="parallax bg-adults">
         <div class="nav-spacer">&nbsp;</div>
         <h1 class="accent-text">Adults</h1>
@@ -84,8 +69,6 @@
             <h5>Tuesday Evening Bible Study</h5>
             <p>New study beginning this Fall!</p>
             <p>Every Tuesday 6:30pm</p>
-            <!--p>Beginning Mid-February</p-->
-            <!--p>Room 101 at the church</p-->
             <p>Contact Patty Robinson for more information:<script>insertEMail("patty");</script></p>
 
             <!--h4>Spring Women's Retreat</h4>
@@ -103,135 +86,35 @@
     <div class="spacerX3">&nbsp;</div>
     <section class="grid">
         <div class="grid-cell-full">
-            <p class="align-center">Depending upon your student's age, there are two different opportunities to gather on Sunday nights! We play games, eat food, and enjoy time together. It's a lot of fun and we'd love to see your student there! If you are interested, please email <script>insertEMail("sarah")</script> for the address where we meet.</p>
+            <p class="align-center">Depending upon your student's age, there are two different opportunities to gather on Sunday nights! We meet at LOD to play games, eat food, and enjoy time together. It's a lot of fun and we'd love to see your student there! If you are interested, please email <script>insertEMail("sarah")</script> for more details.</p>
         </div>
         <div class="grid-cell-third-desktop hide-on-mobile">&nbsp;</div>
         <div class="grid-cell-full grid-cell-sixth-desktop">
             <h5>5th-8th Grade</h5>
             <p>4-5:30 PM</p>
-            <p>Pastor Bill's House</p>
         </div>
         <div class="grid-cell-full grid-cell-sixth-desktop">
             <h5>8th-12th Grade</h5>
             <p>6-7:30 PM</p>
-            <p>Pastor Bill's House</p>
         </div>
         <div class="grid-cell-third-desktop hide-on-mobile">&nbsp;</div>
-        <!--div class="grid-cell-full grid-cell-third-desktop">
-            <h3>Young Adults</h3>
-            <hr class="hr-wide"/>
-            <h5>Young Adult Gathering</h5>
-            <p>Tuesday, March 10</p>
-            <p>Majerle's Desert Ridge</p>
-            <p>Meet at 6:30, Trivia Night begins at 7</p>
+    </section>
+    <div class="spacerX3">&nbsp;</div>
+
+    <section id="calendar" class="parallax bg-adults">
+        <div class="nav-spacer">&nbsp;</div>
+        <h1 class="accent-text">Calendar</h1>
+    </section>
+    <div class="spacerX3">&nbsp;</div>
+    <section class="grid">
+        <div class="grid-cell-full grid-cell-full-desktop">
+            <iframe class="embedded-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=patty%40lightofthedesert.org&amp;color=%23875509&amp;ctz=America%2FPhoenix"></iframe>
+        </div>
+        <!--div class="grid-cell-full grid-cell-half-desktop">
+            <iframe class="embedded-calendar" src="https://lightofthedesert.churchcenter.com/registrations"></iframe>
         </div-->
     </section>
     <div class="spacerX3">&nbsp;</div>
-
-    <!--section id="card" class="parallax bg-adults">
-        <div class="nav-spacer">&nbsp;</div>
-        <h1 class="accent-text">Connection Card</h1>
-    </section>
-    <div class="spacerX3">&nbsp;</div>
-    <form action="https://lod-connection-card.azurewebsites.net/api/LODConnectionCard" method="post" onsubmit="captchaCheck(event)">
-        <div class="textGrid">
-            <div class="halfCellL">
-                <div class="inputBack">
-                    <input class="textInput" type="text" name="firstname1" placeholder="First Name*" required>
-                </div>
-            </div>
-
-            <div class="halfCellR">
-                <div class="inputBack">
-                    <input class="textInput"  type="text" name="lastname1" placeholder="Last Name*" required>
-                </div>
-            </div>
-
-            <div id="addName" class="rowButton" title="Add a family member">
-                <a href="javascript:addNameField();"><i class="fa fa-plus-circle"></i></a>
-            </div>
-
-            <div class="inputBack">
-                <input class="textInput"  type="email" name="email" placeholder="Email Address*" required>
-            </div>
-
-            <div class="inputBack">
-                <input class="textInput"  type="tel" name="phone" placeholder="Phone Number">
-            </div>
-
-            <hr/>
-
-            <div class="twoThirdCellL">
-                <div class="inputBack">
-                    <input class="textInput" type="text" name="address1" placeholder="Address">
-                </div>
-            </div>
-
-            <div class="thirdCellR">
-                <div class="inputBack">
-                    <input class="textInput"  type="text" name="address2" placeholder="Apt/unit/box">
-                </div>
-            </div>
-
-            <div class="thirdCellL">
-                <div class="inputBack">
-                    <input class="textInput" type="text" name="city" placeholder="City">
-                </div>
-            </div>
-
-            <div class="thirdCellC">
-                <div class="inputBack">
-                    <input class="textInput"  type="text" name="state" placeholder="State">
-                </div>
-            </div>
-
-            <div class="thirdCellR">
-                <div class="inputBack">
-                    <input class="textInput"  type="text" name="zip" placeholder="Zip Code">
-                </div>
-            </div>
-
-            <hr/>
-
-            <div class="inputBack">
-                <textarea name="prayer" rows="5" class="fullCell" placeholder="Do you have any prayer requests?"></textarea>
-            </div>
-
-            <div class="inputBack">
-                <textarea name="message" rows="5" class="fullCell" placeholder="Is there anything else you would like us to know?"></textarea>
-            </div>
-
-            <p class="smallNote">* Required Field</p>
-
-            <div class="checkboxGrid">
-                <div class="inputContainer">
-                    <input type="checkbox" name="newsflash" value="newsflash">
-                </div>
-                <div class="textContainer">
-                    <p>I would like to be added to Light of the Desert's News Flash</p>
-                </div>
-
-                <div class="inputContainer">
-                    <input type="checkbox" name="pastor" value="pastor">
-                </div>
-                <div class="textContainer">
-                    <p>I would like a Pastor to contact me</p>
-                </div>
-            </div>
-
-            <div class="captchaContainer">
-                <div class="g-recaptcha"
-                     data-callback="captchaCompleted"
-                     data-expired="captchaExpired"
-                     data-sitekey="6LecRKoZAAAAAAWK3r6fvIAN5wGr8upK2iBHmb2z"></div>
-            </div>
-
-            <div class="submitButton">
-                <input type="submit" value="Submit">
-            </div>
-        </div>
-    </form>
-    <div class="spacerX3">&nbsp;</div-->
 </div>
 <hr/>
 <footer id="footer"></footer>
